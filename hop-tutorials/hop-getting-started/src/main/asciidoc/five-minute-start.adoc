@@ -1,0 +1,5 @@
+== Get Started with Hop in 5 minutes
+
+* Download Hop
+* Unzip Hop
+* Run hop-ide.sh
