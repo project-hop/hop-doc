@@ -1,9 +1,0 @@
-<?xml version="1.0" encoding="UTF-8"?>
-<remoteResourcesBundle xsi:schemaLocation="http://maven.apache.org/remote-resources/1.1.0 https://maven.apache.org/xsd/remote-resources-1.1.0.xsd"
-    xmlns="http://maven.apache.org/remote-resources/1.1.0"
-    xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
-  <remoteResources>
-    <remoteResource>themes/lean-theme.yml</remoteResource>
-  </remoteResources>
-  <sourceEncoding>ANSI_X3.4-1968</sourceEncoding>
-</remoteResourcesBundle>
