@@ -78,40 +78,8 @@
                             <goal>process-asciidoc</goal>
                         </goals>
                         <configuration>
-                            <outputFile>${project.basedir}/target/generated-docs/${output.filename}.html</outputFile>
                             <backend>html</backend>
                             <doctype>book</doctype>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>output-pdf</id>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>process-asciidoc</goal>
-                        </goals>
-                        <configuration>
-                            <backend>pdf</backend>
-                            <outputFile>${project.basedir}/target/generated-docs/${output.filename}.pdf</outputFile>
-                            <attributes>
-                                <pdf-stylesdir>${project.basedir}/target/maven-shared-archive-resources/themes</pdf-stylesdir>
-                                <pdf-style>lean</pdf-style>
-                            </attributes>
-                        </configuration>
-                    </execution>
-                    <execution>
-                        <id>output-pdf-book</id>
-                        <phase>generate-resources</phase>
-                        <goals>
-                            <goal>process-asciidoc</goal>
-                        </goals>
-                        <configuration>
-                            <backend>pdf</backend>
-                            <doctype>book</doctype>
-                            <outputFile>${project.basedir}/target/generated-docs/${output.filename}-book.pdf</outputFile>
-                            <attributes>
-                                <pdf-stylesdir>${project.basedir}/target/maven-shared-archive-resources/themes</pdf-stylesdir>
-                                <pdf-style>lean</pdf-style>
-                            </attributes>
                         </configuration>
                     </execution>
                 </executions>
