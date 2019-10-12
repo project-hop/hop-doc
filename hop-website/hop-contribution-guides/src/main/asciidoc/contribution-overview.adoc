@@ -1,4 +1,5 @@
 = How To Contribute
+:icons: font
 
 Project Hop is developed by an open and friendly community. Everybody is cordially welcome to join the community and contribute to Project Hop. There are several ways to interact with the community and to contribute to Hop including asking questions, filing bug reports, proposing new features, joining discussions on the mailing lists, contributing code or documentation, improving the website, or testing release candidates.
 
@@ -7,30 +8,32 @@ Contributing to Project Hop goes beyond writing code for the project. Below, we 
 
 .Contribution table
 [width="100%", ,cols="3,10", options="header"]
-|==============================================================
+|===
 |Area|Further Information
-|Report a Bug|To report a problem with Hop, open Hop’s Jira, log in if necessary, and click on the red Create button at the top.
+|icon:bug[] Report a Bug|To report a problem with Hop, open Hop’s Jira, log in if necessary, and click on the red Create button at the top.
 Please give detailed information about the problem you encountered and, if possible, add a description that helps to reproduce the problem.
-|Contribute Code|Read the link:code-contribution-guide.html[Code Contribution Guide]
-|Help With Code Reviews|Read the link:code-review-guide.html[Code Review Guide]
-|Help Preparing a Release|
-Releasing a new version consists of the following steps:
+|icon:code[] Contribute Code|Read the link:code-contribution-guide.html[Code Contribution Guide]
+|icon:search[] Help With Code Reviews|Read the link:code-review-guide.html[Code Review Guide]
+|icon:building[] Help Preparing a Release a| Releasing a new version consists of the following steps:
+
 . Building a new release candidate and starting a vote (usually for 72 hours) on the dev@project-hop.org list
 . Testing the release candidate and voting (+1 if no issues were found, -1 if the release candidate has issues).
 . Going back to step 1 if the release candidate had issues. Otherwise we publish the release.
+
 Read the test procedure for a release.
-|Contribute Documentation|Read the link:documentation-contribution-guide.html[Documentation Contribution Guide]
-|Support Hop Users|
+|icon:book[] Contribute Documentation|Read the link:documentation-contribution-guide.html[Documentation Contribution Guide]
+|icon:info-circle[] Support Hop Users a|
 - Reply to questions on the user mailing list
 - Reply to Hop related questions on Stack Overflow with the hop tag
 - Check the latest issues in Jira for tickets which are actually user questions
-|Improve the Website|Read the Website Contribution Guide
-|Spread the Word about Hop|
+
+|icon:wifi[] Improve the Website |Read the Website Contribution Guide
+|icon:volume-up[] Spread the Word about Hop a|
 - Organize or attend a Hop Meetup
 - Contribute to the Hop blog
 - Share your conference, meetup or blog post on the community@project-hop.org mailing list, or tweet about it, tagging the @ProjectHop handle.
-|Any other questions? Reach out to the Hop forums to get help.
-|==============================================================
+2+|icon:question-circle[] Any other questions? Reach out to the Hop forums to get help.
+|===
 
 == Further Reading
 === Submit a Contributor License Agreement
