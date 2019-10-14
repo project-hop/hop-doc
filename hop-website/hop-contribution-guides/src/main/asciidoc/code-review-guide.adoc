@@ -13,7 +13,7 @@ This guide is for all committers and contributors that want to help with reviewi
 . <<consensus, Is There Consensus that the Change or Feature Should Go into Hop?>>
 . <<need-attention, Does the Contribution Need Attention from some Specific Committers and Is There Time Commitment from These Committers?>>
 . <<follow-approach, Does the Implementation Follow the Agreed Upon Overall Approach/Architecture?>>
-. <<good-quality, Is the Overall Code Quality Good, Meeting Standard we Want to Maintain in Flink?>>
+. <<good-quality, Is the Overall Code Quality Good, Meeting Standard we Want to Maintain in Hop?>>
 . <<en-and-ch, Are the English and Chinese documentation updated?>>
 
 <<bot-review, Review with the @hopbot>>
@@ -59,7 +59,7 @@ This question should be answerable from the Pull Request description (or the lin
 
 We recommend to check this before diving into the details of commenting on individual parts of the change.
 
-=== anchor:good-quality[]Is the Overall Code Quality Good, Meeting Standard we Want to Maintain in Flink?
+=== anchor:good-quality[]Is the Overall Code Quality Good, Meeting Standard we Want to Maintain in Hop?
 
 This is the detailed code review of the actual changes, covering:
 
@@ -68,10 +68,10 @@ This is the detailed code review of the actual changes, covering:
 - Are the changes performance aware, when changing a performance sensitive part?
 - Are the changes sufficiently covered by tests?
 - Are the tests executing fast, i.e., are heavy-weight integration tests only used when necessary?
-- Does the code format follow Flink’s checkstyle pattern?
+- Does the code format follow Hop's checkstyle pattern?
 - Does the code avoid to introduce additional compiler warnings?
 - If dependencies have been changed, were the NOTICE files updated?
-- Code guidelines can be found in the Flink Code Style and Quality Guide.
+- Code guidelines can be found in the Hop Code Style and Quality Guide.
 
 === anchor:en-and-ch[]Are the English and Chinese documentation updated?
 
@@ -89,18 +89,18 @@ The bot automatically posts a comment tracking the review progress for each new 
 |===
 |## Review Progress
 |* [ ] 1. The description looks good.
-|* [ ] 2. There is consensus that the contribution should go into to Flink.
+|* [ ] 2. There is consensus that the contribution should go into to Hop.
 |* [ ] 3. [Does not need specific attention \| Needs specific attention for X \| Has attention for X by Y]
 |* [ ] 4. The architectural approach is sound.
 |* [ ] 5. Overall code quality is good.
 |
-|Please see the [Pull Request Review Guide](https://flink.apache.org/contributing/reviewing-prs.html) if you have questions about the review process.
+|Please see the [Pull Request Review Guide](https://project-hop.org/contributing/reviewing-prs.html) if you have questions about the review process.
 |===
 
 Reviewers can instruct the bot to tick off the boxes (in order) to indicate the progress of the review.
 
-For approving the description of the contribution, mention the bot with @flinkbot approve description. This works similarly with consensus, architecture and quality.
+For approving the description of the contribution, mention the bot with @hopbot approve description. This works similarly with consensus, architecture and quality.
 
 For approving all aspects, put a new comment with @hopbot approve all into the pull request.
 
-The syntax for requiring attention is @flinkbot attention @username1 [@username2 ..]
+The syntax for requiring attention is @hopbot attention @username1 [@username2 ..]

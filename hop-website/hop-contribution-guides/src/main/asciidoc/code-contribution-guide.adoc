@@ -72,11 +72,11 @@ Do not open a Jira ticket for these types of changes before the discussion has c
 * The _Component_ field is set: Many committers and contributors only focus on certain subsystems of Hop. Setting the appropriate component is important for getting their attention.
 - There is *agreement* that the ticket solves a valid problem, and that it is a *good fit* for Hop. The Hop community considers the following aspects:
 * Does the contribution alter the behavior of features or components in a way that it may break previous users’ programs and setups? If yes, there needs to be a discussion and agreement that this change is desirable.
-* Does the contribution conceptually fit well into Flink? Is it too much of a special case such that it makes things more complicated for the common case, or bloats the abstractions / APIs?
-* Does the feature fit well into Flink’s architecture? Will it scale and keep Flink flexible for the future, or will the feature restrict Flink in the future?
-* Is the feature a significant new addition (rather than an improvement to an existing part)? If yes, will the Flink community commit to maintaining this feature?
-* Does this feature align well with Flink’s roadmap and currently ongoing efforts?
-* Does the feature produce added value for Flink users or developers? Or does it introduce the risk of regression without adding relevant user or developer benefit?
+* Does the contribution conceptually fit well into Hop? Is it too much of a special case such that it makes things more complicated for the common case, or bloats the abstractions / APIs?
+* Does the feature fit well into Hop's architecture? Will it scale and keep Hop flexible for the future, or will the feature restrict Hop in the future?
+* Is the feature a significant new addition (rather than an improvement to an existing part)? If yes, will the Hop community commit to maintaining this feature?
+* Does this feature align well with Hop's roadmap and currently ongoing efforts?
+* Does the feature produce added value for Hop users or developers? Or does it introduce the risk of regression without adding relevant user or developer benefit?
 * Could the contribution live in another repository, e.g., Apache Bahir or another external repository?
 * Is this a contribution just for the sake of getting a commit in an open source project (fixing typos, style changes merely for taste reasons)
 - There is *consensus* on how to solve the problem. This includes considerations such as
