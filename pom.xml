@@ -24,5 +24,6 @@
         <module>hop-tutorials</module>
         <module>hop-doc-resources</module>
         <module>hop-website</module>
+        <module>hop-about</module>
     </modules>
 </project>
