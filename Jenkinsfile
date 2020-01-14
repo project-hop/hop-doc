@@ -8,13 +8,13 @@ pipeline {
 
         timestamps()
     }
-
-stage('Start Website Build') {
-        steps {
-            script {
+    stages {
+        stage('Start Website Build') {
+            steps {
+                script {
                     build job: "hop-website", wait: false
+                }
             }
         }
     }
-    
 }
