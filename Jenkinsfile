@@ -10,11 +10,12 @@ pipeline {
     }
     stages {
         stage('Start Website Build') {
+            when {
+                branch 'master'
+            }
             steps {
-                if (env.BRANCH_NAME == 'master') {
-                    script {
-                        build job: "hop-website/master", wait: false
-                    }
+                script {
+                    build job: "hop-website/master", wait: false
                 }
             }
         }
