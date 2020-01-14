@@ -1,3 +1,0 @@
-== Documentation Guide
-
-Short explanation of the documentation structure
