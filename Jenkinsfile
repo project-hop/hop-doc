@@ -12,7 +12,7 @@ pipeline {
         stage('Start Website Build') {
             steps {
                 script {
-                    build job: "hop-website", wait: false
+                    build job: "hop-website/master", wait: false
                 }
             }
         }
