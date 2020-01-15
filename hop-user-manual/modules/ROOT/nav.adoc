@@ -1,3 +1,6 @@
 * xref:getting-started.adoc[Getting started]
+* xref:concepts.adoc[Concepts]
 * xref:plugins/plugins.adoc[Plugins]
-** xref:plugins/database-plugins.adoc[Database Plugins]
+** xref:plugins/database-plugins.adoc[Database plugins]
+* xref:samples/plugins.adoc[Samples]
+** xref:samples/dummy-plugins.adoc[Dummy sample]
