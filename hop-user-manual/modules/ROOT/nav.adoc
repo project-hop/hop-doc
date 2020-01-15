@@ -4,3 +4,5 @@
 ** xref:plugins/database-plugins.adoc[Database plugins]
 * xref:samples/plugins.adoc[Samples]
 ** xref:samples/dummy-plugins.adoc[Dummy sample]
+* xref:faq/faq.adoc[Frequently Asked Questions]
+** xref:faq/faq1.adoc[What is HOP?]
