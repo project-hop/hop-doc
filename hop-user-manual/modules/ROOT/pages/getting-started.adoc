@@ -1,2 +1,5 @@
-[[GettingStarted-GettingStarted]]
+[[GettingStarted]]
 = Getting Started
+
+First step is to get the Hop installation, you can do this by visiting our download page or building it from source code.
+
