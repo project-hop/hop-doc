@@ -1,4 +1,4 @@
-[[Transform Plugins]]
+[[transform-plugins]]
 = Transform Plugins
 
 Below is the list of all currently available transform plugins:

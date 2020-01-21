@@ -18,6 +18,7 @@ The Table Input transform reads query results through a database connection.
 == Options
 [width="90%", cols="2", options="header"]
 |===
+| Field | Description
 | SQL | The query to be executed against the database. This query will be SQL in most cases, although other query languages that run over JDBC can be used as well.
 | Get SQL select statement | Select the database table to query from the database browser. This option will provide the option to select columns through a wildcard ("select * from <TABLE>") or will generate a 'SELECT' statement for all column names in the selected table.
 | Enable lazy conversion | Lazy conversion avoids unnecessary data conversions. Hop Concepts for more information.
