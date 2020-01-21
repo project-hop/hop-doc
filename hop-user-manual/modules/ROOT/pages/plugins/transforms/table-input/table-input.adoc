@@ -1,0 +1,33 @@
+[[table-input]]
+= Table Input
+
+The Table Input transform reads query results through a database connection.
+
+== Fields
+
+[width="90%", cols="2*", options="header"]
+|===
+| Field |Description
+| Transform Name |The name to use for this Table Input transform instance. Use a meaningful name that indicates what purpose this transform will serve.
+2+| Connection
+|Edit |Edit the selected database connection.
+|New |Create a new database connection.
+|Wizard |Open the 'New Database Wizard'
+|===
+
+== Options
+[width="90%", cols="2", options="header"]
+|===
+| SQL | The query to be executed against the database. This query will be SQL in most cases, although other query languages that run over JDBC can be used as well.
+| Get SQL select statement | Select the database table to query from the database browser. This option will provide the option to select columns through a wildcard ("select * from <TABLE>") or will generate a 'SELECT' statement for all column names in the selected table.
+| Enable lazy conversion | Lazy conversion avoids unnecessary data conversions. Hop Concepts for more information.
+| Replace variables in script? | When checked, all variables used in the the query text will be substituted with their values. This is a pure-text replacement, and doesn't take any perform any additional operations (e.g. quoting).
+| Insert data from step | The step to read data from. The fields provided by this step will be used to replace query fields that expect parameters. Parameters can be specified using '?', e.g.
+[source, sql]
+----
+SELECT * FROM customers WHERE changed_date BETWEEN ? AND ?
+----
+
+| Execute for each row? | When selected, the provided query will be executed for every row provided by the step specified above. If no input step was specified, the query will be executed once.
+| Limit size | Specify the number of lines to read from the database. Data retrieval will stop if the specified number of lines has been retrieved. If '0' (default), all available records will be retrieved.
+|===

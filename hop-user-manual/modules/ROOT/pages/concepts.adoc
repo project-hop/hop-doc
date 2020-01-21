@@ -1,2 +1,52 @@
 [[Concepts]]
 = Concepts
+
+== Components
+
+.Hop Components
+[width="90%", cols="3*", options="header"]
+|=======
+|Name |Description |Since
+|Hop UI     |Hop UI is the visual IDE where Flow and Pipeline developers create, test and run their work before the code is ready to be deployed.  |0.1
+|Hop Server |Hop Server is a lightweight web server that allows to run Flows and Pipelines through a REST api.  |0.1
+|Hop CLI    |Hop CLI is a command line interface (CLI) for headless execution of Flows and Pipelines |TBD
+|=======
+
+== Item types
+
+.Hop Item Types
+[width="90%", cols="3*", options="header"]
+|===
+|Name |Description |Since
+|Flow |A Flow is a sequence of operations that are performed sequentially by default (with optional parallel execution). Flows usually do not operate on the data directly, but perform orchestration tasks. Typical tasks in a Flow consist of retrieving and archiving data, sending emails, error handling etc. )   |0.1
+|Pipeline |Pipelines are the actual data workers. Operations in a Pipeline read, modify, enrich, clean and write data. Orchestration of Pipelines is done through othere Pipelines and/or Flows. |0.1
+|Action |An Action is one operation performed in a Flow. Actions are executed sequentially by default, with parallel execution as a configuration option. An Action returns a true or false exit code, which can be used (or ignored) in the Flow's execution. |0.1
+|Transform |A Transform is a unit of work performed in a Pipeline. Typical Transform operations are reading data from files, databases, performing lookups or joins, enriching, cleaning data and more. All transforms in a Pipeline are executed in parallel. Transforms process data and move batches of processed data on Hops for processing by subsequent Actions.  |0.1
+|Hop |A Hop links Actions in a Flow or Transforms in a Pipeline. In Flows, Hops operate based on the exit status of previous Actions, Hops in Pipelines pass data between Transforms. |0.1
+|===
+
+== Metastore
+The Hop Metastore is the central storage repository for metadata (database connections, Flows, Pipelines, ...), configuration, settings etc.
+The Metastore uses the following elements:
+
+* *Namespaces*: the top level entry of the Metastore. The default namespace for Hop is simple "Hop".
+* *Element types*: element types are identified by an ID, a name and (optionally) a description.
+* *Elements*: element types can have a number of elements which are identified by an ID, a name and a set of attributes
+* *Attributes*: each attribute has an ID, a value and a set of child attributes. Attribute values typically are Strings, but integers, doubles and dates are supported.
+
+== Various
+The following items are an alphabetically ordered list of concepts that are used throughout Hop and will be mentioned at various locations in the Hop tools and documentation.
+
+.Various Hop Concepts
+[width="90%", cols="2*", options="header"]
+|===
+|Lazy Loading | If enabled, all data conversions (character decoding, data conversion, trimming, ...) for the data being read will be postponed as long as possible, effectively reading the data as binary fields. Enabling lazy conversion can significantly decrease the CPU cost of reading data.
+
+* when to avoid: if the data conversion needs to be performed later in the stream anyway, postponing the conversion may slow things down instead of speeding up.
+* use cases where Lazy Conversion may speed things up:
+** data is read and written to another file without conversion
+** data needs to be sorted and doesn't fit in memory. In this case, serialization to disk is faster with lazy conversion because encoding and type conversions are postponed.
+** bulk-loading to database without the need for data conversion. Bulk loading utilities typically read text directly and the generation of this text is faster (this does not apply to Table Output).
+|
+
+|===
