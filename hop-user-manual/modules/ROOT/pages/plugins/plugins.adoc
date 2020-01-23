@@ -4,5 +4,5 @@
 This section contains all available plugin information
 
 == Plugin List
-* link:database-plugins.adoc[Database Plugins]
-* link:transform-plugins.adoc[Transform Plugins]
+* xref:database-plugins.adoc[Database Plugins]
+* xref:transform-plugins.adoc[Transform Plugins]
