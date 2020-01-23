@@ -3,4 +3,4 @@
 
 Below is the list of all currently available transform plugins:
 
-* xref:table-input/table-input.adoc[Table Input]
+* link:table-input/table-input.adoc[Table Input]

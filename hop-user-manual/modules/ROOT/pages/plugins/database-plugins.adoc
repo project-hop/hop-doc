@@ -3,4 +3,4 @@
 
 This document will contain all information about the database plugins
 
-* xref:database/postgresql.adoc[PostgreSQL]
+* link:/database/postgresql.adoc[PostgreSQL]
