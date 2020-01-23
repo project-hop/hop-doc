@@ -2,6 +2,7 @@
 * xref:concepts.adoc[Concepts]
 * xref:plugins/plugins.adoc[Plugins]
 ** xref:plugins/database-plugins.adoc[Database Plugins]
+*** xref:plugins/database/postgresql.adoc[PostgreSQL]
 ** xref:plugins/transform-plugins.adoc[Transform Plugins]]
 *** xref:plugins/transforms/table-input/table-input.adoc[Table Input]
 * xref:samples/plugins.adoc[Samples]

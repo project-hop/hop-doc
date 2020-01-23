@@ -2,3 +2,5 @@
 = Database Plugins
 
 This document will contain all information about the database plugins
+
+* xref:database/postgresql.adoc[PostgreSQL]
