@@ -5,7 +5,7 @@
 |===
 | Option | Info
 |Type | Relational
-|Driver | 
+|Driver | Included in Database installation
 |Version Included | None
 |Hop Dependencies | None
 |Documentation | https://cedocs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=BGJD

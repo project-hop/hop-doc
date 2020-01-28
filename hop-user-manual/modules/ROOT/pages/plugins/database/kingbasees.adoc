@@ -1,12 +1,13 @@
-[[database-plugins-postgresql]]
-= PostgreSQL
+[[database-plugins-kinbasees]]
+= kingbase es
 
 [width="90%", cols="2*", options="header"]
 |===
 | Option | Info
 |Type | Relational
-|Driver | Included
-|Version Included | 42.2.8
+|Driver | 
+|Version Included | None
 |Hop Dependencies | None
-|Documentation | https://jdbc.postgresql.org/documentation/head/index.html
+|Documentation | https://www.kingbase.com.cn/zhuanti/kes/html/jdbc.html
+|JDBC Url | jdbc:kingbase8://host:port/database
 |===

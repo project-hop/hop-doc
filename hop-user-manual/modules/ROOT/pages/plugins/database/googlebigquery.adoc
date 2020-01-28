@@ -1,12 +1,13 @@
-[[database-plugins-postgresql]]
-= PostgreSQL
+[[database-plugins-googlebigquery]]
+= Google BigQuery
 
 [width="90%", cols="2*", options="header"]
 |===
 | Option | Info
 |Type | Relational
-|Driver | Included
-|Version Included | 42.2.8
+|Driver | https://cloud.google.com/bigquery/providers/simba-drivers/
+|Version Included | None
 |Hop Dependencies | None
-|Documentation | https://jdbc.postgresql.org/documentation/head/index.html
+|Documentation | https://www.simba.com/products/BigQuery/doc/JDBC_InstallGuide/content/jdbc/d-intro.htm
+|JDBC Url | jdbc:bigquery://[Host]:[Port];ProjectId=[Project];OAuthType=[AuthValue]
 |===

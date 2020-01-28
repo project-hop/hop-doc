@@ -1,12 +1,13 @@
-[[database-plugins-postgresql]]
-= PostgreSQL
+[[database-plugins-informix]]
+= informix
 
 [width="90%", cols="2*", options="header"]
 |===
 | Option | Info
 |Type | Relational
-|Driver | Included
-|Version Included | 42.2.8
+|Driver | https://download.oracle.com/otndocs/jcp/jdbc-4.0-fr-eval-oth-JSpec/
+|Version Included | None
 |Hop Dependencies | None
-|Documentation | https://jdbc.postgresql.org/documentation/head/index.html
+|Documentation | https://www.ibm.com/support/knowledgecenter/en/SSGU8G_12.1.0/com.ibm.jdbc_pg.doc/jdbc.htm
+|JDBC Url | jdbc:informix-sqli://hostname:1533/databaseName
 |===

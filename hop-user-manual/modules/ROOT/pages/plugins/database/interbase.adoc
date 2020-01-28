@@ -1,12 +1,13 @@
-[[database-plugins-postgresql]]
-= PostgreSQL
+[[database-plugins-interbase]]
+= interbase
 
 [width="90%", cols="2*", options="header"]
 |===
 | Option | Info
 |Type | Relational
-|Driver | Included
-|Version Included | 42.2.8
+|Driver | Included in Database installation
+|Version Included | None
 |Hop Dependencies | None
-|Documentation | https://jdbc.postgresql.org/documentation/head/index.html
+|Documentation | http://docwiki.embarcadero.com/InterBase/2020/en/Programming_with_JDBC
+|JDBC Url | jdbc:interbase://hostname:3050/path/to/database.ib
 |===

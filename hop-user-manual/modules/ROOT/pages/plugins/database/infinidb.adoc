@@ -1,12 +1,13 @@
-[[database-plugins-postgresql]]
-= PostgreSQL
+[[database-plugins-infinidb]]
+= InfiniDB
 
 [width="90%", cols="2*", options="header"]
 |===
 | Option | Info
 |Type | Relational
-|Driver | Included
-|Version Included | 42.2.8
-|Hop Dependencies | None
-|Documentation | https://jdbc.postgresql.org/documentation/head/index.html
+|Driver | Use MySQL Drivers
+|Version Included | None
+|Hop Dependencies | Mysql Database Plugin
+|Documentation | https://dev.mysql.com/doc/connector-j/8.0/en/connector-j-reference.html
+|JDBC Url | jdbc:mysql://hostname:3306/databaseName
 |===

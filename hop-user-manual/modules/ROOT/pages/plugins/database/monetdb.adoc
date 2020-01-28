@@ -1,12 +1,13 @@
-[[database-plugins-postgresql]]
-= PostgreSQL
+[[database-plugins-monetdb]]
+= monetdb
 
 [width="90%", cols="2*", options="header"]
 |===
 | Option | Info
-|Type | Relational
+|Type | Column Store
 |Driver | Included
-|Version Included | 42.2.8
+|Version Included | 2.25
 |Hop Dependencies | None
-|Documentation | https://jdbc.postgresql.org/documentation/head/index.html
+|Documentation | https://www.monetdb.org/Documentation/Manuals/SQLreference/Programming/JDBC
+|JDBC Url |  jdbc:monetdb://hostname/databaseName
 |===
