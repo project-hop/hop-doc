@@ -3,4 +3,9 @@
 
 This document will contain all information about the database plugins
 
+* xref:plugins/database/as400.adoc[AS400]
+* xref:plugins/database/cache.adoc[Cache]
+* xref:plugins/database/db2.adoc[IBM DB2]
+* xref:plugins/database/dbase.adoc[dBase]
+* xref:plugins/database/derby.adoc[Apache Derby]
 * xref:plugins/database/postgresql.adoc[PostgreSQL]

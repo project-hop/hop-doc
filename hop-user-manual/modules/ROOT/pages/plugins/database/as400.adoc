@@ -1,0 +1,13 @@
+[[database-plugins-as400]]
+= AS400
+
+[width="90%", cols="2*", options="header"]
+|===
+| Option | Info
+|Type | Relational
+|Driver | https://developer.ibm.com/articles/i-javatoolbox/
+|Version Included | None
+|Hop Dependencies | None
+|Documentation | https://www.ibm.com/support/knowledgecenter/ssw_ibm_i_71/rzahh/javadoc/com/ibm/as400/access/doc-files/JDBCProperties.html
+|JDBC Url | jdbc:as400://hostname/default-schema
+|===

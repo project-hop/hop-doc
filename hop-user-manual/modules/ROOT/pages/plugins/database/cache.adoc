@@ -1,0 +1,13 @@
+[[database-plugins-cache]]
+= Cache
+
+[width="90%", cols="2*", options="header"]
+|===
+| Option | Info
+|Type | Relational
+|Driver | 
+|Version Included | None
+|Hop Dependencies | None
+|Documentation | https://cedocs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=BGJD
+|JDBC Url  | jdbc:Cache://hostname:1972/database
+|===
