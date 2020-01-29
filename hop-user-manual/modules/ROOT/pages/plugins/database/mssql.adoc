@@ -1,12 +1,15 @@
-[[database-plugins-postgresql]]
-= PostgreSQL
+[[database-plugins-mssql]]
+= MS SqlServer
+
+This database type uses, the JTDS driver. When creating new database connections it is recommended to use the native connection type.
 
 [width="90%", cols="2*", options="header"]
 |===
 | Option | Info
 |Type | Relational
-|Driver | Included
-|Version Included | 42.2.8
+|Driver | https://sourceforge.net/projects/jtds/files/jtds/
+|Version Included | None
 |Hop Dependencies | None
-|Documentation | https://jdbc.postgresql.org/documentation/head/index.html
+|Documentation | http://jtds.sourceforge.net/faq.html
+|JDBC Url | jdbc:jtds:sqlserver://<server>[:<port>][/<database>][;<property>=<value>[;...]]
 |===

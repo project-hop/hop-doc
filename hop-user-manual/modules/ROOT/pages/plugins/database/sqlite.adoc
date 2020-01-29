@@ -1,12 +1,13 @@
-[[database-plugins-postgresql]]
-= PostgreSQL
+[[database-plugins-sqlite]]
+= SqLite
 
 [width="90%", cols="2*", options="header"]
 |===
 | Option | Info
 |Type | Relational
 |Driver | Included
-|Version Included | 42.2.8
+|Version Included | 3.28.0
 |Hop Dependencies | None
-|Documentation | https://jdbc.postgresql.org/documentation/head/index.html
+|Documentation | https://www.sqlitetutorial.net/sqlite-java/sqlite-jdbc-driver/
+|JDBC Url | jdbc:sqlite:sample.db
 |===

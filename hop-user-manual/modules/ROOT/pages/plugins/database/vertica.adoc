@@ -5,8 +5,9 @@
 |===
 | Option | Info
 |Type | Relational
-|Driver | Included
-|Version Included | 42.2.8
+|Driver | https://www.vertica.com/download/vertica/client-drivers/
+|Version Included | None
 |Hop Dependencies | None
-|Documentation | https://jdbc.postgresql.org/documentation/head/index.html
+|Documentation | https://www.vertica.com/docs/9.2.x/HTML/Content/Authoring/ConnectingToVertica/ClientJDBC/JDBCConnectionProperties.htm
+|JDBC Url | jdbc:vertica://VerticaHost:portNumber/databaseName
 |===

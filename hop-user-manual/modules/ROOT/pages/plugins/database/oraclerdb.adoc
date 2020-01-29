@@ -1,12 +1,13 @@
-[[database-plugins-postgresql]]
-= PostgreSQL
+[[database-plugins-oraclerdb]]
+= Oracle RDB
 
 [width="90%", cols="2*", options="header"]
 |===
 | Option | Info
 |Type | Relational
-|Driver | Included
-|Version Included | 42.2.8
+|Driver | https://www.oracle.com/database/technologies/rdb-related-products-downloads.html
+|Version Included | None
 |Hop Dependencies | None
-|Documentation | https://jdbc.postgresql.org/documentation/head/index.html
+|Documentation | https://www.oracle.com/technetwork/database/database-technologies/rdb/documentation/rdbjdbc-ug-725-129654.pdf
+|JDBC Url | jdbc:rdbThin://<node>:<port>/<database_specification>
 |===

@@ -1,12 +1,13 @@
-[[database-plugins-postgresql]]
-= PostgreSQL
+[[database-plugins-teradata]]
+= Teradata
 
 [width="90%", cols="2*", options="header"]
 |===
 | Option | Info
 |Type | Relational
-|Driver | Included
-|Version Included | 42.2.8
+|Driver | https://downloads.teradata.com/download/connectivity/jdbc-driver
+|Version Included | None
 |Hop Dependencies | None
-|Documentation | https://jdbc.postgresql.org/documentation/head/index.html
+|Documentation | https://teradata-docs.s3.amazonaws.com/doc/connectivity/jdbc/reference/current/frameset.html
+|JDBC Url | jdbc:teradata://Hostname
 |===
