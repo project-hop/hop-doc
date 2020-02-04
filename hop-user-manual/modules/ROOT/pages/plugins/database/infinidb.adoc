@@ -8,6 +8,6 @@
 |Driver | Use MySQL Drivers
 |Version Included | None
 |Hop Dependencies | Mysql Database Plugin
-|Documentation | https://dev.mysql.com/doc/connector-j/8.0/en/connector-j-reference.html
+|Documentation | https://dev.mysql.com/doc/connector-j/8.0/en/connector-j-reference.html[Documentation Link]
 |JDBC Url | jdbc:mysql://hostname:3306/databaseName
 |===

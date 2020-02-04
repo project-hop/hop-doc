@@ -5,9 +5,9 @@
 |===
 | Option | Info
 |Type | Relational
-|Driver | https://cloud.google.com/bigquery/providers/simba-drivers/
+|Driver | https://cloud.google.com/bigquery/providers/simba-drivers/[Driver Link]
 |Version Included | None
 |Hop Dependencies | None
-|Documentation | https://www.simba.com/products/BigQuery/doc/JDBC_InstallGuide/content/jdbc/d-intro.htm
+|Documentation | https://www.simba.com/products/BigQuery/doc/JDBC_InstallGuide/content/jdbc/d-intro.htm[Documentation Link]
 |JDBC Url | jdbc:bigquery://[Host]:[Port];ProjectId=[Project];OAuthType=[AuthValue]
 |===

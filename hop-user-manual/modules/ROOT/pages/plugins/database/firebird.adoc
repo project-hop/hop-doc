@@ -5,9 +5,9 @@
 |===
 | Option | Info
 |Type | Relational
-|Driver | https://firebirdsql.org/en/jdbc-driver/
+|Driver | https://firebirdsql.org/en/jdbc-driver/[Driver Link]
 |Version Included | None
 |Hop Dependencies | None
-|Documentation | https://firebirdsql.github.io/jaybird-manual/jaybird_manual.html
+|Documentation | https://firebirdsql.github.io/jaybird-manual/jaybird_manual.html[Documentation Link]
 |JDBC Url | jdbc:firebirdsql://localhost:3050/c:/database/example.fdb
 |===

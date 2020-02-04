@@ -5,9 +5,9 @@
 |===
 | Option | Info
 |Type | Relational
-|Driver | https://sesamesoftware.com/relational-junction-dbf-jdbc-driver/
+|Driver | https://sesamesoftware.com/relational-junction-dbf-jdbc-driver/[Driver Link]
 |Version Included | None
 |Hop Dependencies | None
-|Documentation | https://sesamesoftware.com/relational-junction-dbf-jdbc-driver/relational-junction-dbf-file-jdbc-driver-documentation/
+|Documentation | https://sesamesoftware.com/relational-junction-dbf-jdbc-driver/relational-junction-dbf-file-jdbc-driver-documentation/[Documentation Link]
 |JDBC Url | jdbc:relationaljunction:dbf:dbfdir
 |===

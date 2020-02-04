@@ -8,6 +8,6 @@
 |Driver | Included in Database installation
 |Version Included | None
 |Hop Dependencies | None
-|Documentation | https://cedocs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=BGJD
+|Documentation | https://cedocs.intersystems.com/latest/csp/docbook/DocBook.UI.Page.cls?KEY=BGJD[Documentation Link]
 |JDBC Url  | jdbc:Cache://hostname:1972/database
 |===

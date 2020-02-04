@@ -5,9 +5,8 @@
 |===
 | Option | Info
 |Type | Relational
-|Driver | https://downloads.teradata.com/download/connectivity/jdbc-driver
-|Version Included | None
+|Driver | https://downloads.teradata.com/download/connectivity/jdbc-driver[Driver Link]
 |Hop Dependencies | None
-|Documentation | https://teradata-docs.s3.amazonaws.com/doc/connectivity/jdbc/reference/current/frameset.html
+|Documentation | https://teradata-docs.s3.amazonaws.com/doc/connectivity/jdbc/reference/current/frameset.html[Documentation Link]
 |JDBC Url | jdbc:teradata://Hostname
 |===

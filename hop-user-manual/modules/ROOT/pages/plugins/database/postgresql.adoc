@@ -8,6 +8,6 @@
 |Driver | Included
 |Version Included | 42.2.8
 |Hop Dependencies | None
-|Documentation | https://jdbc.postgresql.org/documentation/head/index.html
+|Documentation | https://jdbc.postgresql.org/documentation/head/index.html[Documentation Link]
 |JDBC Url  | jdbc:postgresql://host:port/database
 |===

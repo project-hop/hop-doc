@@ -5,9 +5,9 @@
 |===
 | Option | Info
 |Type | Relational
-|Driver | https://knowledge.opentext.com/knowledge/cs.dll/kcs/kb
+|Driver | https://knowledge.opentext.com/knowledge/cs.dll/kcs/kb[Driver Link]
 |Version Included | None
 |Hop Dependencies | None
-|Documentation | https://knowledge.opentext.com/knowledge/cs.dll/kcs/kb
+|Documentation | https://knowledge.opentext.com/knowledge/cs.dll/kcs/kb[Documentation Link]
 |JDBC Url | jdbc:sqlbase://hostname:port/databaseName
 |===
