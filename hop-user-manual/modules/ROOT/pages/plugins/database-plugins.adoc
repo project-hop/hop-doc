@@ -33,6 +33,7 @@ This document will contain all information about the database plugins
 * xref:plugins/database/sapdb.adoc[SAP DB]
 * xref:plugins/database/sqlbase.adoc[Gupta SQLBase]
 * xref:plugins/database/sqlite.adoc[SqLite]
+* xref:plugins/database/snowflake.adoc[Snowflake]
 * xref:plugins/database/sybase.adoc[Sybase ASE]
 * xref:plugins/database/sybaseiq.adoc[Sybase IQ]
 * xref:plugins/database/teradata.adoc[Teradata]
