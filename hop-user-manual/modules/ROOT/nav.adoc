@@ -31,6 +31,7 @@
 *** xref:plugins/database/remedy-ar-system.adoc[Remedy AR System]
 *** xref:plugins/database/sapdb.adoc[SAP DB]
 *** xref:plugins/database/sqlbase.adoc[Gupta SQLBase]
+*** xref:plugins/database/snowflake.adoc[Snowflake]
 *** xref:plugins/database/sqlite.adoc[SqLite]
 *** xref:plugins/database/sybase.adoc[Sybase ASE]
 *** xref:plugins/database/sybaseiq.adoc[Sybase IQ]
