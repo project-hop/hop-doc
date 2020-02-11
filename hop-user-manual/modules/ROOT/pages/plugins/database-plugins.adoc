@@ -1,4 +1,4 @@
-[[database-plugins]]
+[[plugins/database-plugins]]
 = Database Plugins
 
 This document will contain all information about the database plugins
