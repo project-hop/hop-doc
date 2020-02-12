@@ -1,5 +1,5 @@
-[[database-plugins-postgresql]]
-= PostgreSQL
+[[database-plugins-vertica]]
+= Vertrica
 
 [width="90%", cols="2*", options="header"]
 |===

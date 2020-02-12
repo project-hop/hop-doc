@@ -1,5 +1,5 @@
-[[database-plugins-postgresql]]
-= PostgreSQL
+[[database-plugins-vectorwise]]
+= Vectorwise
 
 [width="90%", cols="2*", options="header"]
 |===
