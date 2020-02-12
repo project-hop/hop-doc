@@ -3,6 +3,8 @@
 
 This document will contain all information about the database plugins
 
+// tag::links[]
+
 * xref:plugins/database/as400.adoc[AS400]
 * xref:plugins/database/cache.adoc[Cache]
 * xref:plugins/database/db2.adoc[IBM DB2]
@@ -40,3 +42,5 @@ This document will contain all information about the database plugins
 * xref:plugins/database/universe.adoc[IBM Universe]
 * xref:plugins/database/vectorwise.adoc[Vectorwise]
 * xref:plugins/database/vertica.adoc[Vertica]
+
+// end::links[]

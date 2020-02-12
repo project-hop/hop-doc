@@ -23,7 +23,7 @@
 *** xref:plugins/database/monetdb.adoc[MonetDB]
 *** xref:plugins/database/msaccess.adoc[MS Access]
 *** xref:plugins/database/mssql.adoc[MS SqlServer]
-*** xref:plugins/database/mssqlnqtive.adoc[MS SqlServer (Native)]
+*** xref:plugins/database/mssqlnative.adoc[MS SqlServer (Native)]
 *** xref:plugins/database/netezza.adoc[Netezza]
 *** xref:plugins/database/oraclerdb.adoc[Oracle RDB]
 *** xref:plugins/database/postgresql.adoc[PostgreSQL]
