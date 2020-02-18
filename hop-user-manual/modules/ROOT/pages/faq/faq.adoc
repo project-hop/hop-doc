@@ -4,4 +4,6 @@
 This page contains some of the frequently asked question
 
 == Questions
+// tag::website-links[]
 * xref:faq1.adoc[What is HOP?]
+// end::website-links[]

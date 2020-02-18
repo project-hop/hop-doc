@@ -3,7 +3,7 @@
 
 This document will contain all information about the database plugins
 
-// tag::links[]
+// tag::website-links[]
 
 * xref:plugins/database/as400.adoc[AS400]
 * xref:plugins/database/cache.adoc[Cache]
@@ -43,4 +43,4 @@ This document will contain all information about the database plugins
 * xref:plugins/database/vectorwise.adoc[Vectorwise]
 * xref:plugins/database/vertica.adoc[Vertica]
 
-// end::links[]
+// end::website-links[]

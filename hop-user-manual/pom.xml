@@ -20,6 +20,10 @@
     <packaging>pom</packaging>
     <url>http://project-hop.org</url>
 
+    <properties>
+        <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
+    </properties>
+
     <modules>
         <module>modules/asciidoctor</module>
     </modules>

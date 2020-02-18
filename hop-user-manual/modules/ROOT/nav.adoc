@@ -45,3 +45,4 @@
 ** xref:samples/dummy-plugins.adoc[Dummy Sample]
 * xref:faq/faq.adoc[Frequently Asked Questions]
 ** xref:faq/faq1.adoc[What is HOP?]
+* xref:image-testpage.adoc[Image testing page]

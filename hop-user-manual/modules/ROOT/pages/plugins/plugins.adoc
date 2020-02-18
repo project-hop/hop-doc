@@ -4,7 +4,7 @@
 This section contains all available plugin information
 
 == Plugin List
-// tag::links[]
+// tag::website-links[]
 * xref:plugins/database-plugins.adoc[Database Plugins]
 * xref:plugins/transform-plugins.adoc[Transform Plugins]
-// end::links[]
+// end::website-links[]
