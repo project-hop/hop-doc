@@ -4,4 +4,4 @@
 *.iml
 *.html
 *.jar
-#./hop-user-manual/modules/asciidoctor/assets
+./hop-user-manual/modules/asciidoctor/assets
