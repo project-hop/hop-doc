@@ -1,6 +1,8 @@
 [[ImageTestpage]]
+:imagesdir: ../assets/images
+
 = Image testpage
 
 This page is used to test if images work in both the documentation and the book
 
-image::test_image.jpg[The alt text of the image]
+image::asciidoctor:test_image.jpg[The alt text of the image]

@@ -58,4 +58,5 @@ include::../../ROOT/pages/samples/samples.adoc[]
 include::../../ROOT/pages/samples/dummy-sample.adoc[leveloffset=+1]
 include::../../ROOT/pages/faq/faq.adoc[tag=!website-links]
 include::../../ROOT/pages/faq/faq1.adoc[leveloffset=+2]
+include::../../ROOT/pages/image-testpage.adoc[]
 
