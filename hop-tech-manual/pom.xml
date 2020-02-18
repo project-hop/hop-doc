@@ -12,10 +12,10 @@
     </parent>
 
     <groupId>org.hop</groupId>
-    <artifactId>hop-user-manual</artifactId>
+    <artifactId>hop-tech-manual</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>Hop User Manual Wrapper</name>
+    <name>Hop Technical Manual Wrapper</name>
     <description></description>
     <packaging>pom</packaging>
     <url>http://project-hop.org</url>

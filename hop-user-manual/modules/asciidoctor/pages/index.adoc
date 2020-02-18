@@ -11,7 +11,7 @@
 :keywords: hop gettingstarted
 :sourcepath: ../../ROOT/pages
 
-= Project Hop
+= Hop User Manual
 
 include::{sourcepath}/getting-started.adoc[]
 include::{sourcepath}/concepts.adoc[]
