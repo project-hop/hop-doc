@@ -23,5 +23,6 @@
         <module>hop-doc-resources</module>
         <module>hop-user-manual</module>
         <module>hop-tech-manual</module>
+        <module>hop-dev-manual</module>
     </modules>
 </project>
