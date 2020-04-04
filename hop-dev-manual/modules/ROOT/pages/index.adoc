@@ -1,1 +1,3 @@
 = Index Page
+
+* xref:getting-started.adoc[Getting started]
