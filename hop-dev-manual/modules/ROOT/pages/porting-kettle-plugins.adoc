@@ -65,3 +65,28 @@ public class SampleMeta extends BaseTransformMeta implements ITransformMeta<Samp
 
 }
 ```
+
+== Repository
+
+Any references to Repository, including parameters and the saveRep() and loadRep() methods in Transforms and Actions can be safely removed
+
+== Slave Servers and Database Connections
+
+These objects are no longer stored in a Pipeline or a Workflow, they are now fully shared objects so any references of those in the interface methods of Transforms and Actions can be safely removed:
+
+- List<DatabaseMeta> databases
+- List<SlaveServer> slaveServers
+
+
+== MetaStore
+
+MetaStore elements can now be managed in a standard way.  In your transform dialogs you can use the widget:
+
+*MetaSelectionLine<IHopMetaStoreElement>*
+
+This will take care of adding label, tooltip, combo box and a few buttons to manage the metastore elements.
+
+If you want your own MetaStore element types to appear in the Hop GUI when creating, editing or deleting elements, create a new class implementing *IGuiMetaStorePlugin<IHopMetaStoreElement>*.
+Provide this class with a *@GuiPlugin* annotation as well as *@GuiMetaStoreElement*.
+
+
