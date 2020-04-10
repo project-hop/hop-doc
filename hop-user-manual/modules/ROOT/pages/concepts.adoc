@@ -9,7 +9,7 @@
 |Name |Description |Since
 |Hop UI     |Hop UI is the visual IDE where Workflow and Pipeline developers create, test and run their work before the code is ready to be deployed.  |0.1
 |Hop Server |Hop Server is a lightweight web server that allows to run Workflows and Pipelines through a REST api.  |0.1
-|Hop CLI    |Hop CLI is a command line interface (CLI) for headless execution of Workflows and Pipelines |TBD
+|Hop CLI    |Hop CLI is a command line interface (CLI) for headless execution of Workflows and Pipelines |0.1
 |=======
 
 == Item types
