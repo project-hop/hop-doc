@@ -2,6 +2,7 @@
 :imagesdir: ../assets/images
 :page-editUrl: www.google.com
 :page-test: test
+:page-hello: test
 
 = Image testpage
 
