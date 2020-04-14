@@ -1,6 +1,9 @@
 [[ImageTestpage]]
 :imagesdir: ../assets/images
 :page-alternativeEditUrl: http://www.google.com
+:page-test: test
+:page-hello: http://www.google.com
+
 
 = Image testpage
 
