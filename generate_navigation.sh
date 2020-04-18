@@ -10,7 +10,7 @@ cp ./hop-user-manual/modules/ROOT/nav_temp.adoc ./hop-user-manual/modules/ROOT/n
 cd ./hop-user-manual/modules/ROOT/pages/plugins/
 
 #generate file list and folder depth
-for f in $(find . -type f -name '*.adoc' ! -name 'plugins.adoc' -exec bash -c 'echo -n '{}':; echo '{}' | grep -o / | wc -l' \;)
+for f in $(find . -type f -name '*.adoc' ! -name 'plugins.adoc' -exec bash -c 'echo -n '{}':; echo '{}' | grep -o / | wc -l | sort' \; | LC_ALL=C sort)
 do
     #generate needed parts for xref
     NESTING_LEVEL=$(($(awk -F  ":" '{print $2}' <<< $f)+1));
