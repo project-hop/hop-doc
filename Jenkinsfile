@@ -38,7 +38,7 @@ pipeline {
                     ls
                     git add .;
                     git commit -m "Jenkins Update navigation" || echo;
-                    origin HEAD:master || echo;
+                    git push origin HEAD:master || echo;
                 ''')
             }
         }
