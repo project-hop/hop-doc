@@ -10,20 +10,27 @@ pipeline {
     }
     stages {
         stage('Generate navigation'){
+            when {
+                branch 'master'
+            }
             steps{
                 sh('./generate_navigation.sh')
             }
         }
         stage('Push') {
+            when {
+                branch 'master'
+            }
             environment { 
                 GIT_AUTH = credentials('1f897a89-aed2-478f-9efc-29ae9b6aaa7c') 
             }
             steps {
                 sh('''
                     git config --local credential.helper "!f() { echo username=\\$GIT_AUTH_USR; echo password=\\$GIT_AUTH_PSW; }; f"
+                    ls
                     git add .;
                     git commit -m "Jenkins Update navigation" || echo;
-                    git push || echo;
+                    origin HEAD:master || echo;
                 ''')
             }
         }
