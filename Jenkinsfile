@@ -23,7 +23,6 @@ pipeline {
             }
             steps{
                 sh('./generate_navigation.sh')
-                sh('cat ./hop-user-manual/modules/ROOT/nav.adoc')
             }
         }
         stage('Push') {
@@ -37,7 +36,6 @@ pipeline {
                 sh('''
                     git config --local credential.helper "!f() { echo username=\\$GIT_AUTH_USR; echo password=\\$GIT_AUTH_PSW; }; f"
                     ls
-                    sh('cat ./hop-user-manual/modules/ROOT/nav.adoc')
                     git add .;
                     git commit -m "Jenkins Update navigation" || echo;
                     origin HEAD:master || echo;
