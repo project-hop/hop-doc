@@ -19,7 +19,7 @@ do
     NESTING_STARS=$(printf '*%.0s' $(seq $NESTING_LEVEL))
 
     #creage xref
-    NEW_LINE="$NESTING_STARS xref:$FILE_LOCATION[$FILE_NAME]"
+    NEW_LINE="$NESTING_STARS xref:plugins/$FILE_LOCATION[$FILE_NAME]"
 
     #add xref to file
     awk "/::=START/ { print; print \"$(echo "$NEW_LINE")\"; next }1" ../../nav.adoc > ../../nav_temp.adoc
