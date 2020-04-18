@@ -9,6 +9,12 @@ pipeline {
         timestamps()
     }
     stages {
+         when {
+                branch 'master'
+            }
+        stage('create local branch'){
+            sh('git checkout -B master')
+        }
         stage('Generate navigation'){
             when {
                 branch 'master'
