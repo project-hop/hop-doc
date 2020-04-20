@@ -5,6 +5,7 @@ This section contains all available plugin information
 
 == Plugin List
 // tag::website-links[]
-* xref:plugins/database-plugins.adoc[Database Plugins]
-* xref:plugins/transform-plugins.adoc[Transform Plugins]
+* xref:plugins/actions.adoc[Action Plugins]
+* xref:plugins/databases.adoc[Database Plugins]
+* xref:plugins/transforms.adoc[Transform Plugins]
 // end::website-links[]
