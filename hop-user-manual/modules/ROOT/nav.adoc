@@ -2,7 +2,7 @@
 * xref:concepts.adoc[Concepts]
 * xref:plugins/plugins.adoc[Plugins]
 //::=START AUTO GENERATED LINKS
-** xref:plugins/actions.adoc[]
+** xref:plugins/actions.adoc[Action Plugins]
 *** xref:plugins/actions/abort.adoc[Abort]
 *** xref:plugins/actions/addresultfilenames.adoc[Add filenames to result]
 *** xref:plugins/actions/checkdbconnection.adoc[Check Db connections]
