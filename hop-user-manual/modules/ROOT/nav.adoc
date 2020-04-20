@@ -108,7 +108,7 @@
 *** xref:plugins/transforms/sort.adoc[Sort Rows]
 *** xref:plugins/transforms/sql.adoc[Execute SQL]
 *** xref:plugins/transforms/streamlookup.adoc[Stream Lookup]
-**** xref:plugins/transforms/table-input/table-input.adoc[Table Input]
+*** xref:plugins/transforms/tableinput.adoc[Table Input]
 *** xref:plugins/transforms/tableoutput.adoc[Table Output]
 *** xref:plugins/transforms/terafast.adoc[Teradata Bulk Loader]
 //::=END AUTO GENERATED LINKS
