@@ -73,7 +73,7 @@
 *** xref:plugins/transforms/dbproc.adoc[DB procedure]
 *** xref:plugins/transforms/delay.adoc[Delay]
 *** xref:plugins/transforms/delete.adoc[Delete]
-*** xref:plugins/transforms/denormaliser.adoc[]
+*** xref:plugins/transforms/denormaliser.adoc[Row Denormaliser]
 *** xref:plugins/transforms/detectemptystream.adoc[Detect Empty Stream]
 *** xref:plugins/transforms/detectlastrow.adoc[Detect last row]
 *** xref:plugins/transforms/dimensionlookup.adoc[Dimension lookup]
