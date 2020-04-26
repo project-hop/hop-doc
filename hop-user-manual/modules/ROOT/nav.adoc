@@ -103,6 +103,8 @@
 *** xref:plugins/transforms/httppost.adoc[HTTP Post]
 *** xref:plugins/transforms/ifnull.adoc[If Null]
 *** xref:plugins/transforms/insertupdate.adoc[Insert - Update]
+*** xref:plugins/transforms/ldapinput.adoc[LDAP Input]
+*** xref:plugins/transforms/ldapoutput.adoc[LDAP Output]
 *** xref:plugins/transforms/loadfileinput.adoc[Load File Input]
 *** xref:plugins/transforms/mergejoin.adoc[Merge Join]
 *** xref:plugins/transforms/nullif.adoc[Null If]
