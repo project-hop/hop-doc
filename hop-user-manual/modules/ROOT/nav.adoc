@@ -107,6 +107,7 @@
 *** xref:plugins/transforms/ldapoutput.adoc[LDAP Output]
 *** xref:plugins/transforms/loadfileinput.adoc[Load File Input]
 *** xref:plugins/transforms/mergejoin.adoc[Merge Join]
+*** xref:plugins/transforms/normaliser.adoc[Row Normaliser]
 *** xref:plugins/transforms/nullif.adoc[Null If]
 *** xref:plugins/transforms/pgbulkloader.adoc[PostgreSQL Bulk Loader]
 *** xref:plugins/transforms/rest.adoc[Rest Client]
