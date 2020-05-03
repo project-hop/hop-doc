@@ -1,5 +1,8 @@
 * xref:getting-started.adoc[Getting Started]
 * xref:concepts.adoc[Concepts]
+* xref:hop-gui/index.adoc[Hop Gui]
+* xref:hop-run/index.adoc[Hop Run]
+* xref:hop-server/index.adoc[Hop Server]
 * xref:plugins/plugins.adoc[Plugins]
 //::=START AUTO GENERATED LINKS
 ** xref:plugins/actions.adoc[Action Plugins]

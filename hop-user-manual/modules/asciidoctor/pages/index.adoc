@@ -15,6 +15,9 @@
 
 include::{sourcepath}/getting-started.adoc[]
 include::{sourcepath}/concepts.adoc[]
+include::{sourcepath}/hop-gui/index.adoc[]
+include::{sourcepath}/hop-run/index.adoc[]
+include::{sourcepath}/hop-server/index.adoc[]
 include::{sourcepath}/plugins/plugins.adoc[tag=!website-links]
 include::{sourcepath}/plugins/database-plugins.adoc[leveloffset=+1,tag=!website-links]
 include::{sourcepath}/plugins/database/as400.adoc[leveloffset=+2]

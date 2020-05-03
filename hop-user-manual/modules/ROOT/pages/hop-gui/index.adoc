@@ -1,0 +1,18 @@
+[[HopGui]]
+
+= Hop Gui
+
+== Database Connections
+== Pipelines
+=== Create pipelines
+=== Run, preview and debug pipelines
+=== Pipeline configuration
+=== Metadata Injection
+== Workflows
+=== Create Workflows
+=== Run and debug Workflows
+=== Workflow configuration
+== Logging & Monitoring
+== Managing Environments
+== Working with Git
+== Metastore Browser
