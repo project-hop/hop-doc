@@ -1,8 +1,7 @@
 [[transform-plugins]]
 = Transform Plugins
 
-Below is the list of all currently available transform plugins:
+Transforms are the cornerstone of HOP, they are used to process and transform your data, they are the building blocks that are used to create a pipeline. The pages nested under this topic contain information on how to use the transforms and what you have to pay attention too when using them.
 
 // tag::website-links[]
-* xref:plugins/transforms/table-input/table-input.adoc[Table Input]
 // end::website-links[]

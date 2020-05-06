@@ -1,46 +1,27 @@
 [[database-plugins]]
+:imagesdir: ../../assets/images
 = Database Plugins
 
-This document will contain all information about the database plugins
+Creating a database connection in HOP is done using one of the many database types available, or you can create a generic connection.
+To create a database connection go to file -> New and select Database connection.
+
+The connection is saved in a central location and can then be used by all pipelines and workflows.
+
+If the license allowed it a jdbc driver is included in the distribution. The documentation of the database type shows you whether the driver is included and if it isn't included will guide you to the location on where to download it.
+
+== Generic connection
+HOP can connect to any database that has a jdbc driver available, the list of supplied databases contain some database specific configuration and a list of reserved keywords.
+
+When a specific database type is not yet available for the database you want to use, you can use the generic connection. To use a generic connection you have to copy your jdbc driver to the `Installation directory/lib` folder. 
+
+image::generic_connection.png[Generic Connection Dialog]
+
+Every connection needs a connection name.
+
+In the Driver Class field you specify your driver class, for example if you use PostgreSQL the class is `org.postgresql.Driver`.
+
+Then there is a field to specify the username and password.
+
 
 // tag::website-links[]
-
-* xref:plugins/databases/as400.adoc[AS400]
-* xref:plugins/databases/cache.adoc[Cache]
-* xref:plugins/databases/db2.adoc[IBM DB2]
-* xref:plugins/databases/dbase.adoc[dBase]
-* xref:plugins/databases/derby.adoc[Apache Derby]
-* xref:plugins/databases/exasol.adoc[Exasol]
-* xref:plugins/databases/firebird.adoc[Firebird]
-* xref:plugins/databases/googlebigquery.adoc[Google BigQuery]
-* xref:plugins/databases/greenplum.adoc[Greenplum]
-* xref:plugins/databases/h2.adoc[H2]
-* xref:plugins/databases/hypersonic.adoc[Hypersonic]
-* xref:plugins/databases/infinidb.adoc[InfiniDB]
-* xref:plugins/databases/infobright.adoc[Infobright]
-* xref:plugins/databases/informix.adoc[Informix]
-* xref:plugins/databases/ingres.adoc[Ingres]
-* xref:plugins/databases/interbase.adoc[Interbase]
-* xref:plugins/databases/kingbasees.adoc[Kingbase ES]
-* xref:plugins/databases/mariadb.adoc[MariaDB]
-* xref:plugins/databases/monetdb.adoc[MonetDB]
-* xref:plugins/databases/msaccess.adoc[MS Access]
-* xref:plugins/databases/mssql.adoc[MS SqlServer]
-* xref:plugins/databases/mssqlnqtive.adoc[MS SqlServer (Native)]
-* xref:plugins/databases/netezza.adoc[Netezza]
-* xref:plugins/databases/oraclerdb.adoc[Oracle RDB]
-* xref:plugins/databases/postgresql.adoc[PostgreSQL]
-* xref:plugins/databases/redshift.adoc[Amazon Redshift]
-* xref:plugins/databases/remedy-ar-system.adoc[Remedy AR System]
-* xref:plugins/databases/sapdb.adoc[SAP DB]
-* xref:plugins/databases/snowflake.adoc[Snowflake]
-* xref:plugins/databases/sqlbase.adoc[Gupta SQLBase]
-* xref:plugins/databases/sqlite.adoc[SqLite]
-* xref:plugins/databases/sybase.adoc[Sybase ASE]
-* xref:plugins/databases/sybaseiq.adoc[Sybase IQ]
-* xref:plugins/databases/teradata.adoc[Teradata]
-* xref:plugins/databases/universe.adoc[IBM Universe]
-* xref:plugins/databases/vectorwise.adoc[Vectorwise]
-* xref:plugins/databases/vertica.adoc[Vertica]
-
 // end::website-links[]
