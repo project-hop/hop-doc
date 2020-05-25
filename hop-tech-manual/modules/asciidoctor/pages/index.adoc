@@ -14,3 +14,4 @@
 = Hop Technical Guide
 
 include::{sourcepath}/getting-started.adoc[]
+include::{sourcepath}/hop-uit.adoc[]
