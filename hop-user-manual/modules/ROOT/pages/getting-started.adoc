@@ -4,7 +4,7 @@
 
 
 == Getting Started with Hop
-* https://artifactory.project-hop.org/artifactory/hop-snapshots-local/org/hop/hop-assemblies-client/0.3.0-SNAPSHOT/[Download] a recent Hop build.
+* https://www.project-hop.org/download/download/[Download] a recent Hop build.
 * unzip hop to a local directory
 * change to the hop directory
 
