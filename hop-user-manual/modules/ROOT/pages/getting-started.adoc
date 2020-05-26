@@ -112,7 +112,7 @@ Hops can be disabled by clicking on them, or through right-click -> disable.
 
 Click anywhere in the pipeline canvas, the area where you'll see the image below.
 
-image::getting-started/getting-started-click-anywhere.png[Hop - Click Anywhere, 45% , align="left" , link="/getting-started/getting-started-click-anywhere.png"]
+image::getting-started/getting-started-click-anywhere.png[Hop - Click Anywhere, 45% , align="left"]
 
 Upon clicking, you'll be presented with the dialog shown below. The search box at the top of this dialog works for transform, name, tags (TODO) etc.
 Once you've found the transform you're looking for, click on it to add it to your pipeline. An alternative to clicking is arrow key navigation + enter.
@@ -121,11 +121,11 @@ Once you've added a transform to your pipeline, you can drag to reposition it.
 
 TODO: link to transform documentation.
 
-image::getting-started/getting-started-add-transform.png[Hop - Add Transform, 75% , align="left" , link="/getting-started/getting-started-add-transform.png"]
+image::getting-started/getting-started-add-transform.png[Hop - Add Transform, 75% , align="left"]
 
 Add a 'Generate Rows' and a 'Add Sequence' transform, and your pipeline should like the one below.
 
-image::getting-started/getting-started-add-two-transforms.png[Hop - Add two transforms, 75% , align="left" , link="/getting-started/getting-started-add-two-transforms"]
+image::getting-started/getting-started-add-two-transforms.png[Hop - Add two transforms, 75% , align="left"]
 
 
 ==== Add a Hop
@@ -136,13 +136,13 @@ There are a number of ways to create a hop:
 * scroll-drag: scroll-click on a transform , while holding down your mouse's scroll button, drag to the second transform. Release the scroll button.
 * click on a transform in your pipeline to open the 'click anywhere' dialog. Click the 'Create hop' image::getting-started/icons/HOP.svg[Create hop, 25px, align="bottom"] button and select the transform you want to create the hop to.
 
-image::getting-started/getting-started-create-hop.png[Hop - Create Hop, 65% , align="left" , link="/getting-started/getting-started-create-hop"]
+image::getting-started/getting-started-create-hop.png[Hop - Create Hop, 65% , align="left"]
 
 === Run your first Pipeline
 
 Click the 'run' button image::getting-started/icons/run.svg[Run, 25px, align="bottom"] in your pipeline toolbar
 
-image::getting-started/getting-started-run-pipeline-dialog.png[Hop - Create Hop, 75% , align="left" , link="/getting-started/getting-started-create-hop"]
+image::getting-started/getting-started-run-pipeline-dialog.png[Hop - Create Hop, 75% , align="left"]
 
 Let's walk through the options in this dialog
 
@@ -163,14 +163,14 @@ Let's walk through the options in this dialog
 Click the 'New' button right next to the 'Pipeline run configuration'.
 Give your run configuration a name and (optionally) a description. Choose the 'local pipeline engine'. As the name implies, the 'local single threaded pipeline engine' runs the pipeline in a single CPU thread. The default 'local pipeline engine' will create a separate CPU thread for each transform in your pipeline to evenly spread the load of your pipeline over your CPU cores.
 
-image::getting-started/getting-started-run-configuration-dialog.png[Hop - Run Configuration Dialog, 75% , align="left" , link="/getting-started/getting-started-run-configuration-dialog"]
+image::getting-started/getting-started-run-configuration-dialog.png[Hop - Run Configuration Dialog, 75% , align="left"]
 
 Click 'Ok' to create your configuration and select it from the dropdown list.
 For this getting started guide, we'll leave all other options to the defaults. Click 'Launch'.
 
 Since we haven't saved our pipeline yet, you'll be prompted to do so by the dialog below.
 
-image::getting-started/getting-started-save-pipeline.png[Hop - Save Pipeline, 55% , align="left" , link="/getting-started/getting-started-save-pipeline"]
+image::getting-started/getting-started-save-pipeline.png[Hop - Save Pipeline, 55% , align="left"]
 
 Your pipeline will finish in a matter of milliseconds, and the 'Execution Result' view will show up at the bottom of your IDE.
 This view has 5 tabs:
@@ -181,7 +181,7 @@ This view has 5 tabs:
 * metrics: TODO
 * performance graph: TODO
 
-image::getting-started/getting-started-execution-results-metrics.png[Hop - Execution Results Metrics, 75% , align="left" , link="/getting-started/getting-started-execution-results-metrics"]
+image::getting-started/getting-started-execution-results-metrics.png[Hop - Execution Results Metrics, 75% , align="left"]
 
 
 === Preview your first Pipeline
@@ -192,15 +192,15 @@ Previews are an easy way to take a glance at the state of your data stream as it
 To preview the data that is processed by a transform, click on a transform and select 'Preview output'.
 The same result can be achieved by selecting a transform in your pipeline (rectangle select) and clicking the preview (eye) icon in the pipeline toolbar.
 
-image::getting-started/getting-started-preview-pipeline.png[Hop - Preview Transform, 75% , align="left" , link="/getting-started/getting-started-preview-pipeline"]
+image::getting-started/getting-started-preview-pipeline.png[Hop - Preview Transform, 75% , align="left"]
 
 You'll be presented with the dialog below. You can change the number of rows to preview (1000 by default), but in most cases, you'll just want to hit the green 'Quick Launch' button.
 
-image::getting-started/getting-started-preview-dialog.png[Hop - Preview Dialog, 75% , align="left" , link="/getting-started/getting-started-preview-dialog"]
+image::getting-started/getting-started-preview-dialog.png[Hop - Preview Dialog, 75% , align="left"]
 
 Once your pipeline finished processing the selected number of rows for the selected transform, a new popup dialog will show your preview results.
 
-image::getting-started/getting-started-preview-results.png[Hop - Preview Results, 75% , align="left" , link="/getting-started/getting-started-preview-results"]
+image::getting-started/getting-started-preview-results.png[Hop - Preview Results, 75% , align="left"]
 
 IMPORTANT: your **entire** pipeline is executed for a preview, you're just taking a peek into the processing at the selected transform. If your pipeline modifies data (writes, updates, deletes) further down the stream, those actions **will* be performed, even if you're previewing an earlier transform.
 
@@ -215,7 +215,7 @@ Let's take a quick look at the buttons at the bottom of this dialog:
 Debugging a pipeline's transform is very similar to previewing. Instead of pausing the pipeline execution after a given number of rows, the pipeline is paused when a given condition is met.
 The process to start a debug session is similar to starting the preview: click on a transform and select 'Debug output' from the pop-up dialog, or select a transform and hit the bug-icon in the pipeline toolbar.
 
-image::getting-started/getting-started-debug-pipeline.png[Hop - Preview Transform, 75% , align="left" , link="/getting-started/getting-started-debug-pipeline"]
+image::getting-started/getting-started-debug-pipeline.png[Hop - Preview Transform, 75% , align="left"]
 
 You'll be presented with the dialog below. You'll recognize this dialog from the 'preview' we just did, but instead, the 'Retrieve first rows (preview)' option is now unchecked, and 'Pause pipeline on condition' is checked.
 
@@ -223,13 +223,13 @@ In the 'Break-point / pause condition' below that option, you can specify on whi
 
 In our very basic example, we've set a breakpoint on 'valuename > 5'.
 
-image::getting-started/getting-started-debug-dialog.png[Hop - Preview Dialog, 75% , align="left" , link="/getting-started/getting-started-debug-dialog"]
+image::getting-started/getting-started-debug-dialog.png[Hop - Preview Dialog, 75% , align="left"]
 
 With the 'valuename > 5' breakpoint, our pipeline is paused as soon as this condition is met (valuename = 6). The rows preceding that moment are also shown, so you can investigate how your data was processed before the breakpoint condition was true.
 
 Similar to the preview options, you can close, stop or continue the debugging ('Get more rows'). When you tell your pipeline to 'Get more rows', the pipeline execution will be resumed until the breakpoint condition is met once more, instead of just fetching the next 1000 (default) rows.
 
-image::getting-started/getting-started-debug-results.png[Hop - Preview Results, 75% , align="left" , link="/getting-started/getting-started-debug-results"]
+image::getting-started/getting-started-debug-results.png[Hop - Preview Results, 75% , align="left"]
 
 
 
@@ -239,7 +239,7 @@ The design and execution of workflows is very similar to that of pipelines. Howe
 
 To create a workflow, hit the 'new' icon or 'CTRL-N'. From the pop-up dialog, select 'New workflow'.
 
-image::getting-started/getting-started-new-workflow.png[Hop - New Workflow, 75% , align="left" , link="/getting-started/getting-started-new-workflow"]
+image::getting-started/getting-started-new-workflow.png[Hop - New Workflow, 75% , align="left"]
 
 Add the following actions to your workflow and create the hops to connect them:
 
@@ -247,7 +247,7 @@ Add the following actions to your workflow and create the hops to connect them:
 * Pipeline
 * Success
 
-image::getting-started/getting-started-new-workflow-actions.png[Hop - New Workflow with actions, 75% , align="left" , link="/getting-started/getting-started-new-workflow-actions"]
+image::getting-started/getting-started-new-workflow-actions.png[Hop - New Workflow with actions, 75% , align="left"]
 
 Double-click or single-click and choose 'Edit action' to configure the action for the pipeline you just created.
 
@@ -255,13 +255,13 @@ In the pipeline dialog, use the 'Browse' button to select your pipeline and give
 
 Click 'OK'.
 
-image::getting-started/getting-started-new-workflow-pipeline-action.png[Hop - New Workflow pipeline action, 75% , align="left" , link="/getting-started/getting-started-new-workflow-pipeline-action"]
+image::getting-started/getting-started-new-workflow-pipeline-action.png[Hop - New Workflow pipeline action, 75% , align="left"]
 
 Notice how the hops in your workflow are a little different from what you've seen in pipeline hops.
 
 Add a fourth action 'Abort' and create a hop from your pipeline action.
 
-image::getting-started/getting-started-new-workflow-abort.png[Hop - New Workflow abort, 75% , align="left" , link="/getting-started/getting-started-new-workflow-abort"]
+image::getting-started/getting-started-new-workflow-abort.png[Hop - New Workflow abort, 75% , align="left"]
 
 You now have the three types of hops that are available in workflows:
 
@@ -281,28 +281,28 @@ Click the 'run' button image::getting-started/icons/run.svg[Run, 25px, align="bo
 
 In the workflow run dialog, hit the 'New' button in the upper right corner to create a new 'Workflow run configuration'.
 
-image::getting-started/getting-started-run-workflow-dialog.png[Hop - New Workflow Config, 75% , align="left" , link="/getting-started/getting-started-run-workflow-dialog"]
+image::getting-started/getting-started-run-workflow-dialog.png[Hop - New Workflow Config, 75% , align="left"]
 
 In the dialog that pops up, add 'Local Workflow' as the workflow configuration name and choose the 'Local workflow engine'.
 
-image::getting-started/getting-started-run-workflow-config-dialog.png[Hop - New Workflow Config Dialog, 75% , align="left" , link="/getting-started/getting-started-run-workflow-config-dialog"]
+image::getting-started/getting-started-run-workflow-config-dialog.png[Hop - New Workflow Config Dialog, 75% , align="left"]
 
 Click 'OK' to return to the workflow run dialog, make sure your configuration is selected and hit 'Launch'.
 
-image::getting-started/getting-started-run-workflow-with-config.png[Hop - New Workflow With Config Dialog, 75% , align="left" , link="/getting-started/getting-started-run-workflow-with-config"]
+image::getting-started/getting-started-run-workflow-with-config.png[Hop - New Workflow With Config Dialog, 75% , align="left"]
 
 This workflow with our very basic pipeline should execute in less than one second. You'll now have the execution results pane which again looks very similar to the pipeline execution results.
 
 The first tab in your workflow execution is 'Logging'. This tab shows the logging information for your entire workflow. Any errors that occurred in your workflow will be highlighted in red.
 
-image::getting-started/getting-started-run-workflow-logging.png[Hop - New Workflow Logging, 75% , align="left" , link="/getting-started/getting-started-run-workflow-logging"]
+image::getting-started/getting-started-run-workflow-logging.png[Hop - New Workflow Logging, 75% , align="left"]
 
 The second tab are your workflow metrics. This tab is less verbose, but gives you an action-by-action overview of the execution of your workflow. The black, green and red color codings indicate information, success and failure.
 In larger worfklows, the metrics tab will give you a quick overview of what happened in your workflow, what the required time per action was, etc.
 
 You'll use the logging tab to find more detailed information about what happened in your workflow or in a particular action.
 
-image::getting-started/getting-started-run-workflow-metrics.png[Hop - New Workflow Metrics, 75% , align="left" , link="/getting-started/getting-started-run-workflow-metrics"]
+image::getting-started/getting-started-run-workflow-metrics.png[Hop - New Workflow Metrics, 75% , align="left"]
 
 
 == Hop Server
@@ -354,18 +354,18 @@ In your favorite browser, go to http://localhost:8085[] and sign in with the def
 
 Click the 'show status' link below to get to page shown in the second screenshot.
 
-image::getting-started/getting-started-server-index.png[Hop - Server Index, 75% , align="left" , link="/getting-started/getting-started-server-index"]
+image::getting-started/getting-started-server-index.png[Hop - Server Index, 75% , align="left"]
 
-image::getting-started/getting-started-server-status.png[Hop - Server Status, 75% , align="left" , link="/getting-started/getting-started-server-status"]
+image::getting-started/getting-started-server-status.png[Hop - Server Status, 75% , align="left"]
 
 We now have verified our server is up and running. Let's return to Hop Gui to configure a run configuration for it.
 Click the 'New' icon or 'CTRL-N' and select 'Slave Server'.
 
-image::getting-started/getting-started-new-slave.png[Hop - New Slave, 75% , align="left" , link="/getting-started/getting-started-new-slave"]
+image::getting-started/getting-started-new-slave.png[Hop - New Slave, 75% , align="left"]
 
 In the slave server dialog, enter the details for the local server we just created.
 
-image::getting-started/getting-started-new-slave-config.png[Hop - New Slave Config, 75% , align="left" , link="/getting-started/getting-started-new-slave-config"]
+image::getting-started/getting-started-new-slave-config.png[Hop - New Slave Config, 75% , align="left"]
 
 With our slave server in place, all that's left to do is to create a run configuration for this server.
 Head back to your pipeline (again, the process is similar for workflows), and hit 'run'. Before running your pipeline, create a new 'Pipeline run configuration'.
@@ -383,12 +383,12 @@ Select this run configuration and run your pipeline. Your execution results will
 
 The execution results for this pipeline will now be available in our server's status page as well:
 
-image::getting-started/getting-started-server-status-after-run.png[Hop - Server Status, 75% , align="left" , link="/getting-started/getting-started-server-status-after-run"]
+image::getting-started/getting-started-server-status-after-run.png[Hop - Server Status, 75% , align="left"]
 
 Select the pipeline or workflow line that you want to investigate, and choose one of the options from the options in the upper left corner of the pipeline or workflow overview table.
 Click the eye icon to open the details for that specfific execution:
 
-image::getting-started/getting-started-server-status-after-run-details.png[Hop - Server Status Details, 75% , align="left" , link="/getting-started/getting-started-server-status-after-run-details"]
+image::getting-started/getting-started-server-status-after-run-details.png[Hop - Server Status Details, 75% , align="left"]
 
 
 == Hop Run
