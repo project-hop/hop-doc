@@ -13,6 +13,6 @@
 === Run and debug Workflows
 === Workflow configuration
 == Logging & Monitoring
-== Managing Environments
+include::environments.adoc[]
 == Working with Git
 == Metastore Browser
