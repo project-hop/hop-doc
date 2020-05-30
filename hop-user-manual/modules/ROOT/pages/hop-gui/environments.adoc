@@ -1,4 +1,5 @@
 [[HopEnvironments]]
+= Environments
 
 == Managing Environments
 
