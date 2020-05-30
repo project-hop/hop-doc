@@ -13,6 +13,6 @@
 === Run and debug Workflows
 === Workflow configuration
 == Logging & Monitoring
-include::environments.adoc[Hop Environments]
+== Environments
 == Working with Git
 == Metastore Browser
