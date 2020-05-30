@@ -1,3 +1,5 @@
+[[HopEnvironments]]
+
 == Managing Environments
 
 NOTE: the current environments implementation is assumed to be functional and feature complete for Hop version 1.0. However, we still intend to work on UI improvements as documented in https://project-hop.atlassian.net/browse/HOP-378[HOP-378]. We encourage the community to provide feedback in that ticket.
