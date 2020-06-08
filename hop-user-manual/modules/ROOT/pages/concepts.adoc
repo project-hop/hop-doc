@@ -18,12 +18,23 @@
 [width="90%", cols="3*", options="header"]
 |===
 |Name |Description |Since
-|Workflow |A Workflow is a sequence of operations that are performed sequentially by default (with optional parallel execution). Workflows usually do not operate on the data directly, but perform orchestration tasks. Typical tasks in a Workflow consist of retrieving and archiving data, sending emails, error handling etc. )   |0.1
-|Pipeline |Pipelines are the actual data workers. Operations in a Pipeline read, modify, enrich, clean and write data. Orchestration of Pipelines is done through othere Pipelines and/or Workflows. |0.1
+|Workflow |A Workflow is a sequence of operations that are performed sequentially by default (with optional parallel execution). Workflows usually do not operate on the data directly, but perform orchestration tasks. Typical tasks in a Workflow consist of retrieving and archiving data, sending emails, error handling etc. ) |0.1
+|Pipeline |Pipelines are the actual data workers. Operations in a Pipeline read, modify, enrich, clean and write data. Orchestration of Pipelines is done through othere Pipelines and/or Workflows.|0.1
 |Action |An Action is one operation performed in a Workflow. Actions are executed sequentially by default, with parallel execution as a configuration option. An Action returns a true or false exit code, which can be used (or ignored) in the Workflow's execution. |0.1
 |Transform |A Transform is a unit of work performed in a Pipeline. Typical Transform operations are reading data from files, databases, performing lookups or joins, enriching, cleaning data and more. All transforms in a Pipeline are executed in parallel. Transforms process data and move batches of processed data on Hops for processing by subsequent Actions.  |0.1
 |Hop |A Hop links Actions in a Workflow or Transforms in a Pipeline. In Workflows, Hops operate based on the exit status of previous Actions, Hops in Pipelines pass data between Transforms. |0.1
 |===
+
+image::concepts/workflow.png[Workflow]
+image::concepts/pipeline.png[Pipeline]
+
+
+== Environment
+
+The <<../hop-gui/environments/environments.adoc#HopEnvironments,Hop Environment>> allows data developers to manage development, acceptance and production environments with their configurations and variables.
+Each environment will remember your opened files, their zoom level and other UI settings.
+
+image::concepts/environments.png[Environment Examples]
 
 == Metastore
 The Hop Metastore is the central storage repository for metadata (database connections, Workflows, Pipelines, ...), configuration, settings etc.
