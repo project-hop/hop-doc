@@ -8,7 +8,7 @@ NOTE: the current environments implementation is assumed to be functional and fe
 === What are Hop Environments
 
 Most people who design and manage data processing on a daily basis work on a multitude of project and modules.
-You'll need to manage these different sets of workflows and pipelines in at least your development, acceptance production environments.
+You'll need to manage these different sets of workflows and pipelines in at least your development, acceptance and production environments.
 Each of these environments comes with its own set of variables and configurations for databases, file paths etc.
 
 The Hop Environments allow data developers to manage these different environments with their configurations and variables.
