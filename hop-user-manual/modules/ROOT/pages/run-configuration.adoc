@@ -1,0 +1,253 @@
+[[RunConfiguration]]
+:imagesdir: ../assets/images
+= Pipeline Run Configuration
+
+== Description
+
+The Pipeline Run Configuration dialogue specifies which execution engine type to run on. The configuration is stored in a Hop meta store.
+
+== Choosing a Run Configuration
+
+When starting a new transformation click **New** next to 'Pipeline run configuration'. Give the configuration a name, description and choose an engine type. The dialogue will change according to the selected engine. 
+
+After creation the configuration can be selected from the configuration list and Hop is ready to launch.
+
+image::run-configuration/configuration-selection.png[Hop Configuration Selection, 45% , align="left"]
+
+== Options
+
+=== Main Tab
+
+The main tab contains the runner selection and specific settings for that runner type.
+
+[width="90%", options="header"]
+|===
+|Option|Description
+|Name|The configuration name.
+|Description|The configuration description.
+|Engine type a|
+
+* Beam DataFlow pipeline engine
+* Beam Direct pipeline engine
+* Beam Flink pipeline engine
+* Beam Spark pipeline engine
+* Local pipeline engine
+* Remote pipeline engine
+|===
+
+=== Variables Tab
+
+The variables tab can be used to specify configuration specific variables.
+
+[width="90%", options="header"]
+|===
+|Option|Description
+|Variable name|A variable name.
+|Value|The variable value.
+|Description|A description for the variable.
+|===
+
+== Runners
+
+Next to local and remote runners Hop can also run on various execution frameworks using link:https://beam.apache.org[Apache Beam]. Currently Beam's link:https://beam.apache.org/documentation/runners/direct/[Direct Runner], link:https://flink.apache.org/[Apache Flink] and link:https://spark.apache.org/[Apache Spark] are available. Current Beam support of different execution engines can be found in the link:https://beam.apache.org/documentation/runners/capability-matrix/[Beam Capability Matrix].
+
+=== Beam DataFlow
+
+Dataflow is a managed Google Cloud service which provisions worker nodes and out of the box optimalisation.
+
+The Cloud Dataflow Runner and service are suitable for large scale, continuous jobs, and provide:
+
+* A fully managed service
+* Autoscaling of the number of workers throughout the lifetime of the job
+* Dynamic work rebalancing
+
+image::run-configuration/beam-dataflow.png[Beam Dataflow Engine, 45% , align="left"]
+
+==== Options
+
+[width="90%", options="header"]
+|===
+|Option|Description
+|Project ID|The Google Cloud project ID.
+|Application name|The application name which will represent the Dataflow job.
+|Staging location|The Dataflow staging location, commonly a Google Storage bucket.
+|Initial number of workers|The number of workers to start with.
+|Maximum number of workers|The maximum allowed workers which can be scaled to.
+|Auto scaling algorithm|The autoscaling mode for your Dataflow job. Possible values are THROUGHPUT_BASED to enable autoscaling, or empty/NONE to disable.
+|Worker machine type|Type of link:https://cloud.google.com/compute/docs/machine-types[machine] to run the Dataflow job.
+|Worker disk type|Type of disk the worker uses.
+|Disk size in GB|The size of the disk the worker uses.
+|Region|Region in which to deploy the machine.
+|Zone|Zone in which to deploy the machine.
+|User agent|A user agent string describing the pipeline to external services.
+|Temp location|Path for temporary files. Must be a valid Google Cloud Storage URL that begins with gs://.
+|Plugins to stage (, delimited)|Comma separated list of plugins.
+|Transform plugin classes|List of transform plugin classes.
+|XP plugin classes|List of extensions point plugins.
+|Streaming Hop transforms flush interval (ms)|The amount of time after which the internal buffer is sent completely over the network and emptied. 
+|Hop streaming transforms buffer size|The internal buffer size to use. 
+|Fat jar file location|Location path of a fat jar.
+|===
+
+
+**Environment Settings**
+
+This environment variable need to be set locally.
+
+[source, bash]
+----
+GOOGLE_APPLICATION_CREDENTIALS=/path/to/google-key.json
+----
+
+=== Beam Direct
+
+The Direct runner can be used for local testing and development.
+
+The Direct Runner executes pipelines on your machine and is designed to validate that pipelines adhere to the Apache Beam model as closely as possible. Instead of focusing on efficient pipeline execution, the Direct Runner performs additional checks to ensure that users do not rely on semantics that are not guaranteed by the model.
+
+* Enforcing immutability of elements
+* Enforcing encodability of elements
+* Elements are processed in an arbitrary order at all points
+* Serialization of user functions (DoFn, CombineFn, etc.)
+
+Using the Direct Runner for testing and development helps ensure that pipelines are robust across different Beam runners. In addition, debugging failed runs can be a non-trivial task when a pipeline executes on a remote cluster. Instead, it is often faster and simpler to perform local unit testing on your pipeline code. Unit testing your pipeline locally also allows you to use your preferred local debugging tools.
+
+image::run-configuration/beam-direct.png[Beam Direct Engine, 45% , align="left"]
+
+==== Options
+
+[width="90%", options="header"]
+|===
+|Option|Description
+|Number of workers|The number of workers to use.
+|User agent|A user agent string describing the pipeline to external services.
+|Temp location|Path for temporary files.
+|Plugins to stage (, delimited)|List of plugins to stage.
+|Transform plugin classes|List of transform plugin classes.
+|XP plugin classes|List of extensions point plugins.
+|Streaming Hop transforms flush interval (ms)|The amount of time after which the internal buffer is sent completely over the network and emptied. 
+|Hop streaming transforms buffer size|The internal buffer size to use. 
+|Fat jar file location|Location path of a fat jar.
+|===
+
+=== Beam Flink
+
+The Flink runner supports two modes: Local Direct Flink Runner and Flink Runner.
+
+The Flink Runner and Flink are suitable for large scale, continuous jobs, and provide:
+
+* A streaming-first runtime that supports both batch processing and data streaming programs
+* A runtime that supports very high throughput and low event latency at the same time
+* Fault-tolerance with exactly-once processing guarantees
+* Natural back-pressure in streaming programs
+* Custom memory management for efficient and robust switching between in-memory and out-of-core data processing algorithms
+* Integration with YARN and other components of the Apache Hadoop ecosystem
+
+image::run-configuration/beam-flink.png[Beam Flink Engine, 45% , align="left"]
+
+==== Options
+
+[width="90%", options="header"]
+|===
+|Option|Description
+|The Flink master|The Flink cluster master.
+|Parallelism|The number of slots that a TaskManager offers (default: 1).
+|Checkpointing interval|The interval at which the checkpointing mechanism stores consistent snapshots of all the state in timers and stateful operators, including connectors, windows, and any user-defined state.
+|Checkpointing interval|
+|Checkpointing timeout (ms)|The time in miliseconds after which a checkpoint-in-progress is aborted, if it did not complete by then.
+|Minimum pause between checkpoints|To make sure that the streaming application makes a certain amount of progress between checkpoints, one can define how much time needs to pass between checkpoints.
+|Fail on checkpointing errors| This determines if a task will be failed if an error occurs in the execution of the task’s checkpoint procedure. This is the default behaviour. Alternatively, when this is disabled, the task will simply decline the checkpoint to the checkpoint coordinator and continue running.
+|Number of execution retries|The number of times that Flink retries the execution before the job is declared as failed.
+|Execution retry delay (ms)|Delaying the retry means that after a failed execution, the re-execution does not start immediately, but only after a certain delay.
+|Object re-use|By default, objects are not reused in Flink. Enabling the object reuse mode will instruct the runtime to reuse user objects for better performance.
+|Disable metrics|This disables the metric fetching.
+|Disable metrics|
+|Retain externalized checkpoints on cancellation|Retain the checkpoint when the job is cancelled.
+|Maximum bundle size|The maximum number of elements in a bundle.
+|Maximum bundle time (ms)|The maximum time to wait before finalising a bundle (in milliseconds).
+|Shutdown sources on final watermark|Shutdown bounded sources. 
+|Latency tracking interval|The interval at which to track the latency of records traveling through the system.
+|Auto watermark interval|The interval in which the watermark will be generated.
+|Batch execution mode|The execution mode that specifies how a batch program is executed in terms of data exchange: pipelining or batched.
+|User agent|A user agent string describing the pipeline to external services.
+|Temp location|Path for temporary files.
+|Plugins to stage (, delimited)|Comma separated list of plugins.
+|Transform plugin classes|List of transform plugin classes.
+|XP plugin classes|List of extensions point plugins.
+|Streaming Hop transforms flush interval (ms)|The amount of time after which the internal buffer is sent completely over the network and emptied. 
+|Hop streaming transforms buffer size|The internal buffer size to use. 
+|Fat jar file location|Location path of a fat jar.
+|===
+
+=== Beam Spark
+
+The Apache Spark Runner can be used to execute Beam pipelines using Apache Spark. 
+
+The Spark Runner executes Beam pipelines on top of Apache Spark, providing:
+
+* Batch and streaming (and combined) pipelines.
+* The same fault-tolerance guarantees as provided by RDDs and DStreams.
+* The same security features Spark provides.
+* Built-in metrics reporting using Spark’s metrics system, which reports Beam Aggregators as well.
+* Native support for Beam side-inputs via spark’s Broadcast variables
+
+image::run-configuration/beam-spark.png[Beam Spark Engine, 45% , align="left"]
+
+==== Options
+
+[width="90%", options="header"]
+|===
+|Option|Description
+|The Spark master|The Spark cluster master.
+|Streaming: batch interval (ms)|Spark splits the stream into micro batches. The batch interval defines the size of the batch in seconds.
+|Streaming: checkpoint directory|If the stream application requires it, then a directory in the Hadoop API compatible fault-tolerant storage (e.g. HDFS, S3, etc.) must be configured as the checkpoint directory.
+|Streaming: checkpoint duration (ms)|
+|Enable Metrics sink|A servlet within the existing Spark UI to serve metrics data as JSON data.
+|Streaming: maximum records per batch|The maximum records per batch interval.
+|Streaming: minimum read time (ms)|Mimimum elapsed read time.
+|Bundle size|The maximum number of elements in a bundle.
+|User agent|A user agent string describing the pipeline to external services. 
+|Temp location|Path for temporary files.
+|Plugins to stage (, delimited)|Comma separated list of plugins.
+|Transform plugin classes|List of transform plugin classes.
+|XP plugin classes|List of extensions point plugins.
+|Streaming Hop transforms flush interval (ms)|The amount of time after which the internal buffer is sent completely over the network and emptied. 
+|Hop streaming transforms buffer size|Hop buffer size.
+|Fat jar file location|Location path of a fat jar.
+|===
+
+=== Local
+
+The local runner runs on the local Hop engine.
+
+image::run-configuration/local-engine.png[Hop Local Engine, 45% , align="left"]
+
+==== Options
+
+[width="90%", options="header"]
+|===
+|Option|Description
+|Row set size|The row set buffer size.
+|Safe mode|Enables safe mode.
+|Collect metrics|Enables metrics collection.
+|Sort transforms|Enables transform sorting.
+|Log rows feedback|Enables log rows feedback.
+|Feedback size in rows|The number of rows to return as feedback.
+|===
+
+=== Remote
+
+The remote runner runs on a remote Hop Server, or a cluster thereof.
+
+image::run-configuration/remote-engine.png[Hop Remote Engine, 45% , align="left"]
+
+==== Options
+
+[width="90%", options="header"]
+|===
+|Option|Description
+|Slave server|The slave server to use.
+|Run Configuration|The configuration to use.
+|Server poll delay (ms)|The delay between periodic polls.
+|Server poll interval (ms)|The interval of periodic polls.
+|===
