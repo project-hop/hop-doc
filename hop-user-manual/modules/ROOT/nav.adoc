@@ -166,7 +166,7 @@
 *** xref:plugins/transforms/filelocked.adoc[File locked]
 *** xref:plugins/transforms/filesfromresult.adoc[Files from result]
 *** xref:plugins/transforms/filestoresult.adoc[Files to result]
-*** xref:plugins/transforms/filterrows.adoc[Files to rows]
+*** xref:plugins/transforms/filterrows.adoc[Filter Rows]
 *** xref:plugins/transforms/flattener.adoc[Flattener]
 *** xref:plugins/transforms/fuzzymatch.adoc[Fuzzy match]
 *** xref:plugins/transforms/getfilenames.adoc[Get filenames]
