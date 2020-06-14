@@ -3,22 +3,29 @@
 
 == Managing Environments
 
-NOTE: the current environments implementation is assumed to be functional and feature complete for Hop version 1.0. However, we still intend to work on UI improvements as documented in https://project-hop.atlassian.net/browse/HOP-378[HOP-378]. We encourage the community to provide feedback in that ticket.
-
 === What are Hop Environments
 
 Most people who design and manage data processing on a daily basis work on a multitude of project and modules.
 You'll need to manage these different sets of workflows and pipelines in at least your development, acceptance and production environments.
-Each of these environments comes with its own set of variables and configurations for databases, file paths etc.
+Every environment comes with its own set of variables and configurations for databases, file paths etc.
 
 The Hop Environments allow data developers to manage these different environments with their configurations and variables.
 Each environment will remember your opened files, their zoom level and other UI settings.
 
 === Create an Environment
 
-To create a new environment, hit the 'New' button or CTRL-N. From the pop-up dialog, click the 'Environment' icon: image:hop-gui/environment/environment.svg[Environment]
+To create a new environment you can use the "Add a new environment" button.
 
-The dialog below will show up.
+image:hop-gui/environment/environment-add.svg[Environment]
+
+You will then be asked for a name:
+
+image:hop-gui/environment/new-environment-dialog.png[New Environment Dialog]
+
+After specifying a name for the environment you can pick the folder in which it lives.
+
+After that the environment is added to the list in the main hop configuration file (config.json).
+We can now edit the environment details:
 
 image::hop-gui/environment/new-environment.png[New Environment]
 
@@ -28,24 +35,19 @@ Let's walk through the options in this dialog:
 [id="tab-env-props", cols="20%,45%,5%,5%,25%", option="header]
 |===
 |Property|Description|Variables Supported|Mandatory|Default
-|Name|The environment's name. Environments will be listed in alphabetical order. Take this into account when naming your environments.|No|Yes|
 |Description|A description for this environment|No|No|
 |Company|The company this environment belongs to|No|No|
 |Department|The department this environment is created for|No|No|
 |Project|The project this environment is created for|No|No|
 |Version|This project version. The project version will become more meaningful once we implement git integration.|No|No|
-|Environment base folder|The base folder to use for this environment|Yes|Yes|
-|MetaStore base folder|The folder where this environment's metadata will be stored|Yes|Yes|${ENVIRONMENT_HOME}
+|Metadata base folder|The folder where this environment's metadata will be stored|Yes|Yes|${ENVIRONMENT_HOME}/metadata
 |Unit test base path|The folder where this environment's unit tests will be stored|Yes|Yes|${ENVIRONMENT_HOME}
 |Data Sets CSV Folder|The folder where this environment's data files will be stored|Yes|Yes|${ENVIRONMENT_HOME}/datasets
-|Enforce execution in environment home||Yes|Yes|checked
+|Enforce execution in environment home|Give an error when trying to execute a pipeline or workflow which is not located in the environment home directory or in a sub-directory|Yes|Yes|checked
 |System variables to set|A list of variable names, values and variable descriptions to use with this environment|No|Yes|
 |===
 
-After creating an environment, you'll be asked if you want to switch to your new environment.
-If you choose to do so, all options and variables will be applied.
-
-image::hop-gui/environment/switch-environment.png[Switch Environment, width="50%"]
+After creating an environment, the user interface will switch to it.  If you specified any variables they will now be available when working.
 
 === Switch Environments
 
@@ -57,93 +59,40 @@ After switching to an environment, Hop Gui will show the exact status of that en
 
 === Manage Environments
 
-To edit an existing environment, choose 'Edit Metastore Element' from the file menu.
+To edit an existing environment, choose the 'Edit environment' toolbar icon:
 
-image::hop-gui/environment/edit-environment-menu.png[Edit Environment Menu, width="50%"]
+image::hop-gui/environment/environment-edit.svg[Edit Environment icon]
 
 The environment dialog will be opened, where you'll be able to change all settings as described in <<tab-env-props>>.
+
+To delete an environment you can use the 'Delete Environment' toolbar icon:
+
+image::hop-gui/environment/environment-delete.svg[Edit Environment icon]
 
 === Advanced Environment Management
 
 ==== Environment Files
 
-By default, environments are stored in your Hop folder as XML files in the path `config/environments/metastore/Hop Environment/`
+Hop enviroments and their home folders are stored in the hop configuration file 'config.json'.  That file lives by default in the config/ folder of your Hop installation.  However, you can point to a different folder with the system property: 'HOP_CONFIG_DIRECTORY'.
 
-Set your system's environment `HOP_CONFIG_DIRECTORY` to overrule the default folder with your custom location.
+In that file you will see a section called 'environmentConfig' containing something like the following:
 
-image::hop-gui/environment/environment-files.png[Environment Files, width="50%"]
+[source,json]
+{
+ "environmentConfig" : {
+  "enabled" : true,
+  "openingLastEnvironmentAtStartup" : true,
+  "environmentConfigFilename" : "environment.json",
+  "environmentFolders" : {
+   "Project 1 - DEV" : "/projects/one/dev/",
+   "Project 1 - UAT" : "/projects/one/uat/",
+   "Project 1 - PRD" : "/projects/one/prd/",
+   "Project 2 - DEV" : "/projects/two/dev/",
+   "Project 2 - UAT" : "/projects/two/uat/",
+   "Project 2 - PRD" : "/projects/two/prd/",
+  }
+}
 
-Although very rarely required, these XML files can be modified by hand or generated and managed through scripts.
-
-[source,xml]
-<?xml version="1.0" encoding="UTF-8" standalone="no"?>
-<element>
-  <id>Project 1 - DEV</id>
-  <value/>
-  <type>String</type>
-  <children>
-    <child>
-      <id>variables</id>
-      <value/>
-      <type>String</type>
-    </child>
-    <child>
-      <id>metaStoreBaseFolder</id>
-      <value>${ENVIRONMENT_HOME}</value>
-      <type>String</type>
-    </child>
-    <child>
-      <id>description</id>
-      <value/>
-      <type>String</type>
-    </child>
-    <child>
-      <id>project</id>
-      <value/>
-      <type>String</type>
-    </child>
-    <child>
-      <id>company</id>
-      <value/>
-      <type>String</type>
-    </child>
-    <child>
-      <id>department</id>
-      <value/>
-      <type>String</type>
-    </child>
-    <child>
-      <id>unitTestsBasePath</id>
-      <value>${ENVIRONMENT_HOME}</value>
-      <type>String</type>
-    </child>
-    <child>
-      <id>version</id>
-      <value/>
-      <type>String</type>
-    </child>
-    <child>
-      <id>enforce_execution_in_environment</id>
-      <value>Y</value>
-      <type>String</type>
-    </child>
-    <child>
-      <id>dataSetsCsvFolder</id>
-      <value>${ENVIRONMENT_HOME}/datasets</value>
-      <type>String</type>
-    </child>
-    <child>
-      <id>environmentHomeFolder</id>
-      <value>/path/to/your/environment/folder/</value>
-      <type>String</type>
-    </child>
-  </children>
-  <name>Project 1 - DEV</name>
-  <security>
-    <owner/>
-    <owner-permissions-list/>
-  </security>
-</element>
 
 ==== Hop Environment Configuration
 

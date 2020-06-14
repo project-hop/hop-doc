@@ -36,14 +36,14 @@ Each environment will remember your opened files, their zoom level and other UI 
 
 image::concepts/environments.png[Environment Examples]
 
-== Metastore
-The Hop Metastore is the central storage repository for metadata (database connections, Workflows, Pipelines, ...), configuration, settings etc.
+== Metadata
+The Hop Metadata is the central storage repository for shared metadata like relational database connections, run configurations, servers, git repositories and so on.
 The Metastore uses the following elements:
 
-* *Namespaces*: the top level entry of the Metastore. The default namespace for Hop is simple "Hop".
-* *Element types*: element types are identified by an ID, a name and (optionally) a description.
-* *Elements*: element types can have a number of elements which are identified by an ID, a name and a set of attributes
-* *Attributes*: each attribute has an ID, a value and a set of child attributes. Attribute values typically are Strings, but integers, doubles and dates are supported.
+* *Object types*: Object types have a key, a name and (optionally) a description.
+* *Objects*: Every object type can have any number of objects which are identified their name
+
+Hop plugins can define their own metadata object types so depending on the installed plugins you can find extra types.
 
 == Various
 The following items are an alphabetically ordered list of concepts that are used throughout Hop and will be mentioned at various locations in the Hop tools and documentation.
