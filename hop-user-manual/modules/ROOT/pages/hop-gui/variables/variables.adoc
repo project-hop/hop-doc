@@ -3,8 +3,8 @@
 
 == What is a Hop variable?
 
-Variables are used in scenarios where you don't want to hardcode something.
-Typically you don't want to hardcode hostnames, usernames, passwords, directories and so on.
+You don't want to hardcode your solutions. It's simply bad form to hardcode host names, user names, passwords, directories and so on.
+Variables allow your solutions to adapt to a changing environment.  If for example the database server is different when developing than it is when running in production, you set it as a variable.
 
 == How do I use a variable?
 
@@ -41,7 +41,7 @@ Variables are local to the place where they are defined.  This means that settin
 |Run Configurations|Pipeline run configurations are inherited by the environment
 |Pipeline|Inherited by the pipeline run configuration
 |Workflow|Inherited by the workflow run configuration
-|Metadata objects|Inherited by the pipeline or workflow
+|Metadata objects|Inherited by the place where it is loaded
 |===
 
 === System properties
