@@ -2,6 +2,7 @@
 * xref:concepts.adoc[Concepts]
 * xref:hop-gui/index.adoc[Hop Gui]
 ** xref:hop-gui/environments/environments.adoc[Hop Environments]
+** xref:hop-gui/variables/variables.adoc[Variables]
 * xref:hop-run/index.adoc[Hop Run]
 * xref:hop-server/index.adoc[Hop Server]
 * xref:plugins/plugins.adoc[Plugins]
