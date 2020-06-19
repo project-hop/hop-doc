@@ -1,0 +1,3 @@
+[[RunConfigurations]]
+:imagesdir: ../assets/images
+= Run Configurations

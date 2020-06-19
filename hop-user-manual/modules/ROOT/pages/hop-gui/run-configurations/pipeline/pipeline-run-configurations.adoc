@@ -1,0 +1,3 @@
+[[PipelineRunConfigurations]]
+:imagesdir: ../assets/images
+= Pipeline Run Configurations

@@ -1,0 +1,3 @@
+[[WorkflowRunConfigurations]]
+:imagesdir: ../assets/images
+= Workflow Run Configurations
