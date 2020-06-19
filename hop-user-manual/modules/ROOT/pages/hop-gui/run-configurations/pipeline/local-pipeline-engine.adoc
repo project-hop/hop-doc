@@ -1,0 +1,3 @@
+[[LocalPipelineEngine]]
+:imagesdir: ../assets/images
+= Local Pipeline Engine
