@@ -1,9 +1,0 @@
-[[RunConfiguration]]
-:imagesdir: ../assets/images
-= Pipeline Run Configuration
-
-
-
-
-
-

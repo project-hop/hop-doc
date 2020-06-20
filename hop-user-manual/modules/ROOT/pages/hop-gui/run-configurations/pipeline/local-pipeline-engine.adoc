@@ -6,7 +6,7 @@
 
 The local runner runs on the local Hop engine.
 
-image::run-configuration/local-engine.png[Hop Local Engine, 45% , align="left"]
+image::run-configuration/local-engine.png[Hop Local Engine, 65% , align="left"]
 
 ==== Options
 
