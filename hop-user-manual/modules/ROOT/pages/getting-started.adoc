@@ -40,6 +40,10 @@ The following tools are at your disposal to work with Hop flows and pipelines:
 
 The Hop Gui is your local development environment to build, run, preview and debug (work)flows and pipelines.
 
+Check out this short video to learn how to download, unzip and start the Hop Gui (on Windows).
+
+video::RMIOTmZK-YE[youtube, width=75%, height=400px]
+
 === Start the Hop GUI
 
 On Linux:
