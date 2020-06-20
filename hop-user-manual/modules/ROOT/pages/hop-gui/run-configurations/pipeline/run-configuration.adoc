@@ -2,54 +2,6 @@
 :imagesdir: ../assets/images
 = Pipeline Run Configuration
 
-== Description
-
-The Pipeline Run Configuration dialogue specifies which execution engine type to run on. The configuration is stored in a Hop meta store.
-
-== Choosing a Run Configuration
-
-When starting a new transformation click **New** next to 'Pipeline run configuration'. Give the configuration a name, description and choose an engine type. The dialogue will change according to the selected engine. 
-
-After creation the configuration can be selected from the configuration list and Hop is ready to launch.
-
-image::run-configuration/configuration-selection.png[Hop Configuration Selection, 45% , align="left"]
-
-== Options
-
-=== Main Tab
-
-The main tab contains the runner selection and specific settings for that runner type.
-
-[width="90%", options="header"]
-|===
-|Option|Description
-|Name|The configuration name.
-|Description|The configuration description.
-|Engine type a|
-
-* Beam DataFlow pipeline engine
-* Beam Direct pipeline engine
-* Beam Flink pipeline engine
-* Beam Spark pipeline engine
-* Local pipeline engine
-* Remote pipeline engine
-|===
-
-=== Variables Tab
-
-The variables tab can be used to specify configuration specific variables.
-
-[width="90%", options="header"]
-|===
-|Option|Description
-|Variable name|A variable name.
-|Value|The variable value.
-|Description|A description for the variable.
-|===
-
-== Runners
-
-Next to local and remote runners Hop can also run on various execution frameworks using link:https://beam.apache.org[Apache Beam]. Currently Beam's link:https://beam.apache.org/documentation/runners/direct/[Direct Runner], link:https://flink.apache.org/[Apache Flink] and link:https://spark.apache.org/[Apache Spark] are available. Current Beam support of different execution engines can be found in the link:https://beam.apache.org/documentation/runners/capability-matrix/[Beam Capability Matrix].
 
 === Beam DataFlow
 
