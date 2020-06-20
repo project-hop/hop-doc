@@ -20,7 +20,7 @@ We define a project in Hop by giving it a name and by linking that name to a dir
 
 == Project Lifecycle
 
-Sometimes you want to have your Project go through various phases to ensure its quality in what is called a Project Lifecycle.  It defines the sequence of Lifecycle Environments your project goes through to read a stable production status.
+Sometimes you want to have your Project go through various phases to ensure its quality in what is called a Project Lifecycle.  It defines the sequence of Lifecycle Environments your project goes through to reach a stable production status.
 
 The lifecycle contains the following:
 - The names of the project lifecycle environments (see below)
