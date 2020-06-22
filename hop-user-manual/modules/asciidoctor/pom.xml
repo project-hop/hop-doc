@@ -47,7 +47,7 @@
                         </goals>
 
                         <configuration>
-                            <outputDirectory>./assets/images</outputDirectory>
+                            <outputDirectory>./target/assets/images</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>../ROOT/assets/images</directory>
@@ -121,6 +121,24 @@
                                 <pdf-stylesdir>${project.basedir}/target/maven-shared-archive-resources/themes</pdf-stylesdir>
                                 <pdf-style>lean</pdf-style>
                             </attributes>
+                        </configuration>
+                    </execution>
+                </executions>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-assembly-plugin</artifactId>
+                <executions>
+                    <execution>
+                        <phase>package</phase>
+                        <goals>
+                            <goal>single</goal>
+                        </goals>
+                        <configuration>
+                            <appendAssemblyId>false</appendAssemblyId>
+                            <descriptors>
+                                <descriptor>assembly-jar.xml</descriptor>
+                            </descriptors>
                         </configuration>
                     </execution>
                 </executions>

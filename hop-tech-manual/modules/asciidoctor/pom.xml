@@ -47,7 +47,7 @@
                         </goals>
 
                         <configuration>
-                            <outputDirectory>./assets/images</outputDirectory>
+                            <outputDirectory>./target/assets/images</outputDirectory>
                             <resources>
                                 <resource>
                                     <directory>../ROOT/assets/images</directory>
