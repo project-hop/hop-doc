@@ -1,5 +1,8 @@
 pipeline {
     agent any
+    tools {
+        maven 'M3'
+    }
 
     options {
         buildDiscarder(
@@ -62,7 +65,7 @@ pipeline {
 
                 rtMavenRun (
                     // Tool name from Jenkins configuration.
-                    tool: M3,
+                    tool: 'M3',
                     pom: 'pom.xml',
                     goals: 'clean install',
                     // Maven options.
