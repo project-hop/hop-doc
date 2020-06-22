@@ -43,33 +43,34 @@ pipeline {
             }
         }
         stage('artifactory build') {
-            rtMavenResolver (
-                id: 'hop-resolver',
-                serverId: 'ART',
-                releaseRepo: 'hop-releases',
-                snapshotRepo: 'hop-snapshots'
-            )  
+            steps {
+                rtMavenResolver (
+                    id: 'hop-resolver',
+                    serverId: 'ART',
+                    releaseRepo: 'hop-releases',
+                    snapshotRepo: 'hop-snapshots'
+                )  
  
-            rtMavenDeployer (
-                id: 'hop-deployer',
-                serverId: 'ART',
-                releaseRepo: 'hop-releases-local',
-                snapshotRepo: 'hop-snapshots-local',
-                // By default, 3 threads are used to upload the artifacts to Artifactory. You can override this default by setting:
-                threads: 6
-            )
+                rtMavenDeployer (
+                    id: 'hop-deployer',
+                    serverId: 'ART',
+                    releaseRepo: 'hop-releases-local',
+                    snapshotRepo: 'hop-snapshots-local',
+                    // By default, 3 threads are used to upload the artifacts to Artifactory. You can override this default by setting:
+                    threads: 6
+                )
 
-            rtMavenRun (
-                // Tool name from Jenkins configuration.
-                tool: M3,
-                pom: 'pom.xml',
-                goals: 'clean install',
-                // Maven options.
-                opts: '-Xms1024m -Xmx4096m',
-                resolverId: 'hop-resolver',
-                deployerId: 'hop-deployer'
-            )
-
+                rtMavenRun (
+                    // Tool name from Jenkins configuration.
+                    tool: M3,
+                    pom: 'pom.xml',
+                    goals: 'clean install',
+                    // Maven options.
+                    opts: '-Xms1024m -Xmx4096m',
+                    resolverId: 'hop-resolver',
+                    deployerId: 'hop-deployer'
+                )
+            }
         }
         stage('Start Website Build') {
             when {
