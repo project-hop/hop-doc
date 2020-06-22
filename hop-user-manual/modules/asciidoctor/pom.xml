@@ -6,12 +6,12 @@
 
     <parent>
         <artifactId>hop-user-manual</artifactId>
-        <groupId>org.hop</groupId>
+        <groupId>org.hop.doc</groupId>
         <version>1.0-SNAPSHOT</version>
         <relativePath>../../pom.xml</relativePath>
     </parent>
 
-    <groupId>org.hop</groupId>
+    <groupId>org.hop.doc</groupId>
     <artifactId>hop-user-manual-asciidoctor</artifactId>
     <version>1.0-SNAPSHOT</version>
 
