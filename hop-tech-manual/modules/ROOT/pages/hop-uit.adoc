@@ -44,9 +44,9 @@ The Hop platform allows the user to create environment configurations. These can
 
 The Hop Ultimate Import Tool creates a folder "hop-uit-environment" in the output folder. This folder represents a Hop environment base folder. Database metadata files from the conversion are created in a subfolder of this folder.
 
-If a Hop config directory is defined in the system variable HOP_CONFIG_DIRECTORY or it is specified by passing the "-c" flag as an argument, then an environment metadata file is created in this location instead of the output folder as described in the paragraph before. In this case, without further manual interaction, this will make the environment configuration available to the Hop platform and allow the user to switch to this environment from within the Hop GUI and have all environment configuration readily available.
+If a Hop config directory is defined in the system variable HOP_CONFIG_FOLDER or it is specified by passing the "-c" flag as an argument, then an environment metadata file is created in this location instead of the output folder as described in the paragraph before. In this case, without further manual interaction, this will make the environment configuration available to the Hop platform and allow the user to switch to this environment from within the Hop GUI and have all environment configuration readily available.
 
-If no system variable HOP_CONFIG_DIRECTORY and no -c flag is specified, then the environment metadata file is created in the output folder specified. After the comversion process is complete, it can be copied from this folder to the folder where the Hop platform is installed: /[Hop installation folder]/config/environments/metastore/Hop Environment.
+If no system variable HOP_CONFIG_FOLDER and no -c flag is specified, then the environment metadata file is created in the output folder specified. After the comversion process is complete, it can be copied from this folder to the folder where the Hop platform is installed: /[Hop installation folder]/config/environments/metastore/Hop Environment.
 
 Alternatively - after conversion -a new environment can be also defined manually in the Hop GUI. In this case a new environment needs to be created where the environment base folder points to the "hop-uit-environment" folder that was created during the conversion process.
 
