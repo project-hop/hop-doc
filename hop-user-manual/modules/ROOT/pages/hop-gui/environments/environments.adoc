@@ -73,7 +73,7 @@ image::hop-gui/environment/environment-delete.svg[Edit Environment icon]
 
 ==== Environment Files
 
-Hop enviroments and their home folders are stored in the hop configuration file 'config.json'.  That file lives by default in the config/ folder of your Hop installation.  However, you can point to a different folder with the system property: 'HOP_CONFIG_DIRECTORY'.
+Hop enviroments and their home folders are stored in the hop configuration file 'config.json'.  That file lives by default in the config/ folder of your Hop installation.  However, you can point to a different folder with the system property: 'HOP_CONFIG_FOLDER'.
 
 In that file you will see a section called 'environmentConfig' containing something like the following:
 
