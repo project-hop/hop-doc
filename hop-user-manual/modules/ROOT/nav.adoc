@@ -150,6 +150,7 @@
 *** xref:plugins/transforms/userdefinedjavaclass.adoc[User Defined Java Class]
 *** xref:plugins/transforms/janino.adoc[User Defined Java Expression]
 *** xref:plugins/transforms/valuemapper.adoc[Value Mapper]
+*** xref:plugins/transforms/webservices.adoc[Web services lookup]
 *** xref:plugins/transforms/propertyoutput.adoc[Write data to properties file]
 *** xref:plugins/transforms/writetolog.adoc[Write to log]
 *** xref:plugins/transforms/xmlinputstream.adoc[XML Input Stream (StAX) ]
