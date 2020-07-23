@@ -2,13 +2,13 @@
 :imagesdir: ../assets/images
 = Remote Pipeline Engine
 
-=== Remote
+== Remote
 
 The remote runner runs on a remote Hop Server, or a cluster thereof.
 
 image::run-configuration/remote-engine.png[Hop Remote Engine, 65% , align="left"]
 
-==== Options
+=== Options
 
 [width="90%", options="header"]
 |===

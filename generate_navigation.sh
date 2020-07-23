@@ -45,5 +45,50 @@ done < <(sort --field-separator=';' -k4,4 -k2,2r /tmp/nav-unsorted)
 rm /tmp/nav-unsorted
 rm ../../nav_temp.adoc
 
+#go back to root
+cd ../../../../..
+
+
+#generate asciidoc index based on antora naviagtion file
+
+#remove current list
+< ./hop-user-manual/modules/asciidoctor/pages/index.adoc sed '/::=START/,/::=END/{/::=START/!{/::=END/!d}}' > ./hop-user-manual/modules/asciidoctor/pages/index_temp.adoc
+
+#replace nav with empty
+cp ./hop-user-manual/modules/asciidoctor/pages/index_temp.adoc ./hop-user-manual/modules/asciidoctor/pages/index.adoc
+
+#reverse file order
+tac ./hop-user-manual/modules/ROOT/nav.adoc > /tmp/nav_reversed.adoc
+
+#read nav.adoc
+
+while read p; do
+	#count * in line
+  	echo "Line: $p"
+	NESTING_LEVEL=$(echo "$p" | tr -d -c '*' | awk '{ print length; }')
+	NESTING_LEVEL=$(($NESTING_LEVEL-1))
+	echo "Nesting Level: $NESTING_LEVEL"
+
+	if (($NESTING_LEVEL >= 0)) 
+	then
+		# if [ $NESTING_LEVEL -eq 0 ]
+		# then
+			# NEW_LINE="include::{sourcepath}/$(grep -oP '(?<=\:).*?(?=\[)' <<< "$p")"
+		# else
+			NEW_LINE="include::{sourcepath}/$(grep -oP '(?<=\:).*?(?=\[)' <<< "$p")[leveloffset=+$NESTING_LEVEL]"
+		# fi
+	
+	echo "File Path: $NEW_LINE"
+	awk "/::=START/ { print; print \"$(echo "$NEW_LINE")\"; next }1" ./hop-user-manual/modules/asciidoctor/pages/index.adoc > ./hop-user-manual/modules/asciidoctor/pages/index_temp.adoc
+	cp ./hop-user-manual/modules/asciidoctor/pages/index_temp.adoc ./hop-user-manual/modules/asciidoctor/pages/index.adoc
+	
+	fi
+
+
+done < /tmp/nav_reversed.adoc
+
+#cleanup
+rm /tmp/nav_reversed.adoc
+rm ./hop-user-manual/modules/asciidoctor/pages/index_temp.adoc
 
 

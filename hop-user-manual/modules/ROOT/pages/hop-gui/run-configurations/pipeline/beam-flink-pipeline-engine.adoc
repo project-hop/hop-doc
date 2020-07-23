@@ -2,7 +2,7 @@
 :imagesdir: ../assets/images
 = Apache Beam Flink Pipeline Engine
 
-=== Beam Flink
+== Beam Flink
 
 The Flink runner supports two modes: Local Direct Flink Runner and Flink Runner.
 
@@ -19,7 +19,7 @@ image::run-configuration/beam-flink.png[Beam Flink Engine, 65% , align="left"]
 
 Check the https://beam.apache.org/documentation/runners/flink/[Apache Beam Flink runner docs] for more information.
 
-==== Options
+=== Options
 
 [width="90%", options="header"]
 |===

@@ -1,5 +1,6 @@
 [[GettingStarted]]
 :imagesdir: ../assets/images
+
 = Getting Started
 
 

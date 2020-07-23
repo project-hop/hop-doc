@@ -2,7 +2,7 @@
 :imagesdir: ../assets/images
 = Apache Beam Spark Pipeline Engine
 
-=== Beam Spark
+== Beam Spark
 
 The Apache Spark Runner can be used to execute Beam pipelines using Apache Spark.
 
@@ -18,7 +18,7 @@ image::run-configuration/beam-spark.png[Beam Spark Engine, 65% , align="left"]
 
 Check the https://beam.apache.org/documentation/runners/spark/[Apache Beam Spark runner docs] for more information.
 
-==== Options
+=== Options
 
 [width="90%", options="header"]
 |===

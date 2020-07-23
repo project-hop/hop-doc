@@ -1,4 +1,5 @@
 [[Variables]]
+:imagesdir: ../assets/images
 = Variables
 
 == What is a Hop variable?

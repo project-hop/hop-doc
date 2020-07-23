@@ -1,4 +1,5 @@
 [[HopRun]]
+:imagesdir: ../assets/images
 
 = Hop Run
 

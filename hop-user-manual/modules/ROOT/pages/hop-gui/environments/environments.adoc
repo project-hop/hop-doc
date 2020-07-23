@@ -1,4 +1,6 @@
 [[HopEnvironments]]
+:imagesdir: ../assets/images
+
 = Environments
 
 == Managing Environments

@@ -1,4 +1,6 @@
 [[Concepts]]
+:imagesdir: ../assets/images
+
 = Concepts
 
 == Components

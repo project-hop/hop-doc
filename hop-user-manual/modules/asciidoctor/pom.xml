@@ -108,7 +108,7 @@
                             <doctype>book</doctype>
                         </configuration>
                     </execution>
-                    <execution>
+                    <!--<execution>
                         <id>output-pdf-book</id>
                         <phase>generate-resources</phase>
                         <goals>
@@ -122,7 +122,7 @@
                                 <pdf-style>hop</pdf-style>
                             </attributes>
                         </configuration>
-                    </execution>
+                    </execution>-->
                 </executions>
             </plugin>
             <plugin>

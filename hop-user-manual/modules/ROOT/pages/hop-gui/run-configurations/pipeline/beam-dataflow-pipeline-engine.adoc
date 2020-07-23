@@ -2,7 +2,7 @@
 :imagesdir: ../assets/images
 = Apache Beam Google DataFlow Pipeline Engine
 
-=== Beam DataFlow
+== Beam DataFlow
 
 Google Cloud Dataflow is a fully managed service for executing Apache Beam pipelines within the Google Cloud Platform ecosystem.
 As a managed Google Cloud service, it provisions worker nodes and out of the box optimization.
@@ -17,7 +17,7 @@ Check the https://cloud.google.com/dataflow/docs/guides/specifying-exec-params[G
 
 image::run-configuration/beam-dataflow.png[Beam Dataflow Engine, 65% , align="left"]
 
-==== Options
+=== Options
 
 [width="90%", options="header"]
 |===
