@@ -1,0 +1,6 @@
+[[IfYouKnowKettle]]
+:imagesdir: ../assets/images
+
+= If You Know Kettle (Pentaho Data Integration)
+
+Placeholder page to let people who are familiar with Kettle transition to Hop in a couple of steps.

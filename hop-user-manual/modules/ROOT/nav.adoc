@@ -1,5 +1,8 @@
 * xref:getting-started.adoc[Getting Started]
 * xref:concepts.adoc[Concepts]
+* xref:hop-vs-kettle/index.adoc[Kettle -> Hop]
+** xref:hop-vs-kettle/hop-vs-kettle.adoc[Hop vs Kettle]
+** xref:hop-vs-kettle/if-you-know-kettle.adoc[If You Know Kettle/PDI]
 * xref:hop-gui/index.adoc[Hop Gui]
 ** xref:hop-gui/environments/environments.adoc[Hop Environments]
 ** xref:hop-gui/pipelines/pipelines.adoc[Pipelines]
