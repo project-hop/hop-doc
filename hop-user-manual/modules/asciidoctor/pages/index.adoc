@@ -18,6 +18,9 @@ Website Generated using the online version of the documentation, this documentat
 //::=START AUTO GENERATED LINKS
 include::{sourcepath}/getting-started.adoc[leveloffset=+0]
 include::{sourcepath}/concepts.adoc[leveloffset=+0]
+include::{sourcepath}/hop-vs-kettle/index.adoc[leveloffset=+0]
+include::{sourcepath}/hop-vs-kettle/hop-vs-kettle.adoc[leveloffset=+1]
+include::{sourcepath}/hop-vs-kettle/if-you-know-kettle.adoc[leveloffset=+1]
 include::{sourcepath}/hop-gui/index.adoc[leveloffset=+0]
 include::{sourcepath}/hop-gui/environments/environments.adoc[leveloffset=+1]
 include::{sourcepath}/hop-gui/pipelines/pipelines.adoc[leveloffset=+1]
