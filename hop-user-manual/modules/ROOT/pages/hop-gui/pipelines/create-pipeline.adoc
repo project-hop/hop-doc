@@ -1,0 +1,3 @@
+[[CreatePipeline]]
+:imagesdir: ../assets/images
+= Create a Pipeline

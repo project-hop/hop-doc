@@ -1,0 +1,4 @@
+[[RunPreviewDebugPipeline]]
+:imagesdir: ../assets/images
+
+= Run, Preview and Debug a Pipeline

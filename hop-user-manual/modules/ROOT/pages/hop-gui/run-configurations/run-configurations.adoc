@@ -1,7 +1,0 @@
-[[RunConfigurations]]
-:imagesdir: ../assets/images
-= Run Configurations
-
-https://www.project-hop.org/manual/latest/hop-gui/run-configurations/pipeline/pipeline-run-configurations.html[Pipeline Run Configurations]
-
-https://www.project-hop.org/manual/latest/hop-gui/run-configurations/workflow/workflow-run-configurations.html[Workflow Run Configurations]

@@ -2,17 +2,17 @@
 
 = Hop Gui
 
-== Database Connections
+== Work Items
 == Pipelines
 === Create pipelines
 === Run, preview and debug pipelines
-=== Pipeline configuration
+=== https://www.project-hop.org/manual/latest/hop-gui/run-configurations/pipeline/pipeline-run-configurations.html[Pipeline Run Configuration]
 === Metadata Injection
 == Workflows
 === Create Workflows
 === Run and debug Workflows
-=== Workflow configuration
+=== https://www.project-hop.org/manual/latest/hop-gui/run-configurations/workflow/workflow-run-configurations.html[Workflow Run Configuration]
 == Logging & Monitoring
-== Environments
+== https://www.project-hop.org/manual/latest/hop-gui/environments/environments.html[Environments]
 == Working with Git
 == Metastore Browser
