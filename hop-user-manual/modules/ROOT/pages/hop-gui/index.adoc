@@ -2,7 +2,7 @@
 
 = Hop Gui
 
-== Work Items
+== https://www.project-hop.org/manual/latest/hop-gui/workitems.html[Work Items]
 == Pipelines
 === Create pipelines
 === Run, preview and debug pipelines
