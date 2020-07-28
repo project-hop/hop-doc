@@ -6,6 +6,7 @@
 * xref:hop-gui/index.adoc[Hop Gui]
 ** xref:hop-gui/environments/environments.adoc[Hop Environments]
 ** xref:hop-gui/pipelines/pipelines.adoc[Pipelines]
+*** xref:hop-gui/pipelines/hop-pipeline-editor.adoc[Pipeline Editor]
 *** xref:hop-gui/pipelines/create-pipeline.adoc[Create a Pipeline]
 *** xref:hop-gui/pipelines/run-preview-debug-pipeline.adoc[Run, Preview and Debug a Pipeline]
 *** xref:hop-gui/pipelines/pipeline-run-configurations/pipeline-run-configurations.adoc[Pipeline Run Configurations]
