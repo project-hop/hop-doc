@@ -4,7 +4,7 @@
 
 == https://www.project-hop.org/manual/latest/hop-gui/workitems.html[Work Items]
 == Pipelines
-=== Create pipelines
+=== https://www.project-hop.org/manual/latest/hop-gui/pipelines/create-pipeline.html[Create pipeline]
 === Run, preview and debug pipelines
 === https://www.project-hop.org/manual/latest/hop-gui/run-configurations/pipeline/pipeline-run-configurations.html[Pipeline Run Configuration]
 === Metadata Injection
