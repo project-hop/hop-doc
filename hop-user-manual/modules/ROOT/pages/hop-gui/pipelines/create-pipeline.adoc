@@ -4,15 +4,13 @@
 
 TODO: this content is based on the https://www.project-hop.org/manual/latest/getting-started.html[Getting Started Guide]. Elaborate more.
 
-Create a new pipeline through the https://www.project-hop.org/manual/latest/hop-gui/workitems.html[New Work Item] dialog. You'll be presented with the dialog shown below.
+Pipelines are the fundamentals of your project. A pipeline contains operations executed in a predefined order. Pipelines consist of a chain of transforms that read, process or write data. The image below shows a simple pipeline that reads data from a table, adds a message to the data and sends out an email.
 
-image::getting-started/getting-started-new-pipeline.png[Hop - New Pipeline, 75%, align="left"]
-
-Pipelines consist of transforms connected by hops. In short, a pipeline is a parallel processing operation of your data.
-A transform is one small step in your data processing. Combined, all of these steps (or transforms) turn your pipelines in one giant leap of data processing.
+image::hop-gui/pipeline/simple-pipeline.png[Hop - Simple Pipeline, 75%, align="left"]
 
 == Concepts
-Pipelines consist of two main work items:
+
+Pipelines consist of transforms connected by hops. In the mail example 'Table input', 'Add message' and 'Mail' are all transforms.
 
 * **transforms** are the basic operations in your pipeline. A pipeline typically consists of a lot of transforms that are chained together by hops.
 Transforms are granular, in the sense that each transform is designed and optimized to perform one and only one task. Although one transform by itself may not offer spectacular functionality, the combination of all transforms in a pipeline is makes your pipelines powerful.
@@ -21,6 +19,14 @@ Transforms are granular, in the sense that each transform is designed and optimi
 Hops are uni-directional (data can't flow backwards). Hops only buffer and pass data around, the hop itself is transform-agnostic, it doesn't know anything about the transforms it passes data from or to.
 Some transforms can read from or write to other transforms conditionally to or from a number of other transforms, but this a transform-specific configuration. The hop is unaware of it.
 Hops can be disabled by clicking on them, or through right-click -> disable.
+
+== Creation
+
+Create a new pipeline through the https://www.project-hop.org/manual/latest/hop-gui/workitems.html[New Work Item] dialog. You'll be presented with the dialog shown below.
+
+image::hop-gui/pipeline/new-pipeline.png[Hop - New Pipeline, 75%, align="left"]
+
+When you are finished with your pipeline, save it. This can be done via the File menu, the icons or using CTLR s or Command s. For new pipelines a file browser is displayed to navigate towards the location you want the store the file.
 
 == Add Transform to your pipelines
 
@@ -42,8 +48,44 @@ Add a 'Generate Rows' and a 'Add Sequence' transform, and your pipeline should l
 
 image::getting-started/getting-started-add-two-transforms.png[Hop - Add two transforms, 75% , align="left"]
 
+The transform object can be configured by right clicking on the object. The menu displayed below will be shown based on your transform object.
 
-==== Add a Hop
+image::hop-gui/pipeline/transforms.png[Hop - transforms, 75% , align="left"]
+
+[width="85%", cols="30%, 70%", options="header"]
+|===
+|Action|Description
+|Detach transform|Detach the transform from the pipeline
+|Edit the transform|Edit the transform's metadata
+|Copy transform to clipboard|Copies selected items to clipboard.
+|Create hop| Creates a new hop between two transforms.
+|Set the number of transforms|Starts several instances of a transform in parallel.
+|Preview output| Allows you to preview the results of the transform.
+|Debug output|
+|Show the fields entering this transform|Shows metadata, like the field name and type for fields coming into the transform.
+|Show the fields exiting this transform|Shows metadata, like the field name and type for fields coming out of the transform.
+|Distribute rows|In case of more than one hop the data is distributed between the next transforms.
+|Copy rows|In case of more than one hop the daya is copied to the next transforms.
+|Specify transform partitioning|
+|Edit transform description|Add a description to the transform.
+|Transform error handling|Set the error handling for the transform, not available for all transforms.
+|Delete this transform|Delete selected transform from the canvas.
+|Edit Custom Logging|
+|Clear Custom Logging|
+|Sniff output|
+|Set input data set|
+|Clear input data set|
+|Set golden data set|
+|Clear golden data set|
+|Create data set|
+|Write rows to data set|
+|Remove from test|
+|Include in test|
+|Bypass in tess|
+|Remove bypass in test|
+|===
+
+== Add a Hop between transforms
 
 There are a number of ways to create a hop:
 
@@ -52,3 +94,51 @@ There are a number of ways to create a hop:
 * click on a transform in your pipeline to open the 'click anywhere' dialog. Click the 'Create hop' image::getting-started/icons/HOP.svg[Create hop, 25px, align="bottom"] button and select the transform you want to create the hop to.
 
 image::getting-started/getting-started-create-hop.png[Hop - Create Hop, 65% , align="left"]
+
+Some transforms result in different types of hops.
+
+[width="85%", cols="30%, 70%", options="header"]
+|===
+|Hop|Description
+|Result is TRUE|Specifies that the transform will be executed only when the result from the previous transform is true
+|Result is FALSE|pecifies that the transform will be executed only when the result from the previous transform is false
+|Main output of transform|The default hop between two transforms
+|===
+
+== Pipeline properties
+Pipeline properties are a collection of properties that describe the piple and configure its behavior. 
+
+The properties can be configured by double clicking on the pipeline canvas or by selecting the 'Edit pipeline' option in the metastore browser.
+
+Following properties can be configured:
+
+* Pipeline
+* Parameters
+* Monitoring
+
+image::hop-gui/pipeline/properties-pipeline.png[Pipeline properties, 75% , align="left"]
+
+The Pipeline tab allows you to specify general properties about the pipeline including:
+[width="85%", cols="30%, 70%", options="header"]
+|===
+|Property|Description
+|Pipeline name| The name of the pipeline
+|Synchronize name with filename|If option is enabled the filename and pipeline name are synchronized.
+|Pipeline filename| The filename of the pipeline
+|Description|Short description of the pipeline
+|Extended description| Long extended description of the pipeline
+|Status| Draft or production status
+|Version|Description of the version
+|Created by| Displays the original creator of the pipeline
+|Created at|Displays the date and time when the pipeline was created.
+|Last modified by| Displays the last user that modified the pipeline
+|Last modified at|Displays the date and time when the pipeline was last modified.
+|===
+
+image::hop-gui/pipeline/parameters-pipeline.png[Parameters properties, 75% , align="left"]
+
+The parameters tab allows you to specify parameters specific for the pipeline. Parameters are defined by a name, a default value and a description.
+
+image::hop-gui/pipeline/monitoring-pipeline.png[Monitoring properties, 75% , align="left"]
+
+The monitoring tab allows you to specif the monitoring of the pipeline.
