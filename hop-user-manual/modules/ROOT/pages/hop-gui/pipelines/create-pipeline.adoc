@@ -26,7 +26,7 @@ Create a new pipeline through the https://www.project-hop.org/manual/latest/hop-
 
 image::hop-gui/pipeline/new-pipeline.png[Hop - New Pipeline, 75%, align="left"]
 
-When you are finished with your pipeline, save it. This can be done via the File menu, the icons or using CTLR s or Command s. For new pipelines a file browser is displayed to navigate towards the location you want the store the file.
+When you are finished with your pipeline, save it. This can be done via the File menu, the icons or using CTLR s or Command s. For new pipelines a file browser is displayed to navigate towards the location you want to store the file.
 
 == Add Transform to your pipelines
 
