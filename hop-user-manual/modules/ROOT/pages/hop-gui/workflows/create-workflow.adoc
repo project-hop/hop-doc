@@ -2,3 +2,39 @@
 :imagesdir: ../assets/images
 
 = Create a Workflow
+
+Workflows are process that orchestrate a variety of actions defined between a starting and endpoint. These actions can be, but are not limited to:
+
+* Executing other workflows
+* Executing pipelines
+* File handling
+* Error messaging handling
+* Notification handling 
+
+A simple workflow is displayed below, the flow will check if a folder is empty, if not a pipeline is executed.
+
+image::hop-gui/workflow/simple-workflow.png[Hop-Simple Workflow, 75%, align="left"]
+
+== Concepts
+
+Workflows consist of actions connected by hops. In the mail example 'Start', 'Check if a folder is empty', 'Pipeline', 'Success' and 'Abort workflow' are all actions.
+
+* **actions** are the basic operations in your workflow. A workflow typically consists of actions that are chained together by hops.
+
+* **hops** link actions together. Hops can be disabled by clicking on them, or through right-click -> disable.
+
+== Creation
+
+The design and execution of workflows is very similar to that of pipelines. However, keep in mind that there are significant differences between how Hop handles workflows and pipelines under the hood.
+
+To create a workflow, hit the 'new' icon or 'CTRL-N'. From the pop-up dialog, select 'New workflow'.
+
+image::getting-started/getting-started-new-workflow.png[Hop - New Workflow, 75% , align="left"]
+
+When you are finished with your workflow, save it. This can be done via the File menu, the icons or using CTLR s or Command s. For new workflows a file browser is displayed to navigate towards the location you want to store the file.
+
+== Add Action to your workflow
+
+== Add a Hop between actions
+
+== Workflow properties

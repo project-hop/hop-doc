@@ -3,16 +3,36 @@
 = Hop Gui
 
 == https://www.project-hop.org/manual/latest/hop-gui/workitems.html[Work Items]
+
+Work items are the building blocks for the start of your Hop journey. Different work items exist and can be used in the Hop environment. They are described in this section and in more detail in the specific Pipeline and Workflow sections. 
+
 == Pipelines
-=== https://www.project-hop.org/manual/latest/hop-gui/pipelines/create-pipeline.html[Create pipeline]
-=== Run, preview and debug pipelines
-=== https://www.project-hop.org/manual/latest/hop-gui/run-configurations/pipeline/pipeline-run-configurations.html[Pipeline Run Configuration]
-=== Metadata Injection
+
+Pipelines are a main concept in Hop. A pipeline are more granular items of work. The actual work is done in a Pipeline. Following sections describe the basic concepts of Pipelines.
+
+==== https://www.project-hop.org/manual/latest/hop-gui/pipelines/create-pipeline.html[Create pipeline]
+==== Run, preview and debug pipelines
+==== https://www.project-hop.org/manual/latest/hop-gui/run-configurations/pipeline/pipeline-run-configurations.html[Pipeline Run Configuration]
+==== Metadata Injection
 == Workflows
-=== Create Workflows
-=== Run and debug Workflows
-=== https://www.project-hop.org/manual/latest/hop-gui/run-configurations/workflow/workflow-run-configurations.html[Workflow Run Configuration]
+
+Workflows perform a variety of actions between a starting point and one or more endpoints. Following sections describe the basic concepts of Workflows.
+
+==== Create Workflows
+==== Run and debug Workflows
+==== https://www.project-hop.org/manual/latest/hop-gui/run-configurations/workflow/workflow-run-configurations.html[Workflow Run Configuration]
 == Logging & Monitoring
+
+This section describes Logging and Monitoring for Hop and how to implement it on different levels.
+
 == https://www.project-hop.org/manual/latest/hop-gui/environments/environments.html[Environments]
+
+Hop Environments offer the possibility to manage different environments with specific configurations and variables. This section will describe the managing and use of Hop Environments
+
 == Working with Git
+
+Hop can be connected to your Git Repository, this section will explain more into detail how to use and configure Hop and Git.
+
 == Metastore Browser
+
+The metastore browser contains all objects in one location. This section handles the metastore browser and the editors of the metastore elements.
