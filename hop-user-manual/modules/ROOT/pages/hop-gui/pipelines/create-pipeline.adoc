@@ -48,7 +48,7 @@ Add a 'Generate Rows' and a 'Add Sequence' transform, and your pipeline should l
 
 image::getting-started/getting-started-add-two-transforms.png[Hop - Add two transforms, 75% , align="left"]
 
-The transform object can be configured by right clicking on the object. The menu displayed below will be shown based on your transform object.
+The transform object can be configured through a single click on the object. The menu displayed below will be shown based on your transform object.
 
 image::hop-gui/pipeline/transforms.png[Hop - transforms, 75% , align="left"]
 
@@ -70,19 +70,19 @@ image::hop-gui/pipeline/transforms.png[Hop - transforms, 75% , align="left"]
 |Edit transform description|Add a description to the transform.
 |Transform error handling|Set the error handling for the transform, not available for all transforms.
 |Delete this transform|Delete selected transform from the canvas.
-|Edit Custom Logging|
-|Clear Custom Logging|
-|Sniff output|
-|Set input data set|
-|Clear input data set|
-|Set golden data set|
-|Clear golden data set|
-|Create data set|
-|Write rows to data set|
-|Remove from test|
-|Include in test|
-|Bypass in tess|
-|Remove bypass in test|
+|Edit Custom Logging| Edit the custom log settings for this transform. This will change the log level used for this transform.
+|Clear Custom Logging|Clear custom log settings. This will clear the log level used for this transform.
+|Sniff output|Take a look at 50 rows coming out of this transform. This will show a real-time table with a continuous output of the selected transform.
+|Set input data set| Defines which data to use instead of the active input transform, applies to the selected unit test
+|Clear input data set|Remove a defined data set from the selected unit test
+|Set golden data set|The input to this transform is taken and compared to the golden data set you are selecting.\nThe transform itself is not executed during testing
+|Clear golden data set|Remove a defined input data set from this transform unit test
+|Create data set|Create an empty dataset with the output fields of this transform
+|Write rows to data set|Run the current pipeline and write the data to a data set
+|Remove from test|When this unit test is run, do not include this transform
+|Include in test|Run the current pipeline and write the data to a data set
+|Bypass in tess|When this unit test is run, bypass this transform (replace with a dummy)
+|Remove bypass in test|Do not bypass this transform in the current pipeline during testing
 |===
 
 == Add a Hop between transforms
@@ -106,9 +106,9 @@ Some transforms result in different types of hops.
 |===
 
 == Pipeline properties
-Pipeline properties are a collection of properties that describe the piple and configure its behavior. 
+Pipeline properties are a collection of properties that describe the pipeline and configure its behavior.
 
-The properties can be configured by double clicking on the pipeline canvas or by selecting the 'Edit pipeline' option in the metastore browser.
+The properties dialog can be opened by double clicking on the pipeline canvas.
 
 Following properties can be configured:
 
@@ -141,4 +141,4 @@ The parameters tab allows you to specify parameters specific for the pipeline. P
 
 image::hop-gui/pipeline/monitoring-pipeline.png[Monitoring properties, 75% , align="left"]
 
-The monitoring tab allows you to specif the monitoring of the pipeline.
+The monitoring tab allows you to specify the monitoring of the pipeline.
