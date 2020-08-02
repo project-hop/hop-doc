@@ -18,7 +18,7 @@
 |Script for configuration|-|Hop Config
 |===
 
-[width="90%", cols="2,3,3", options="header]
+[width="90%", cols="2,3,3", options="header"]
 |===
 |Configuration|Kettle|Hop
 |System variables|${KETTLE_HOME}/.kettle/kettle.properties|${HOP_CONFIG_FOLDER}/hop-config.json or ./config/hop-config.json
