@@ -119,6 +119,7 @@ Following properties can be configured:
 image::hop-gui/pipeline/properties-pipeline.png[Pipeline properties, 75% , align="left"]
 
 The Pipeline tab allows you to specify general properties about the pipeline including:
+
 [width="85%", cols="30%, 70%", options="header"]
 |===
 |Property|Description
@@ -135,10 +136,19 @@ The Pipeline tab allows you to specify general properties about the pipeline inc
 |Last modified at|Displays the date and time when the pipeline was last modified.
 |===
 
+The parameters tab allows you to specify parameters specific for the pipeline. Parameters are defined by a name, a default value and a description.
+
 image::hop-gui/pipeline/parameters-pipeline.png[Parameters properties, 75% , align="left"]
 
-The parameters tab allows you to specify parameters specific for the pipeline. Parameters are defined by a name, a default value and a description.
+The monitoring tab allows you to specify the monitoring of the pipeline.
 
 image::hop-gui/pipeline/monitoring-pipeline.png[Monitoring properties, 75% , align="left"]
 
-The monitoring tab allows you to specify the monitoring of the pipeline.
+The options to set in this tab are:
+
+[width="85%", cols="30%, 60%, 10%", options="header"]
+|===
+|Property|Description|Type
+|Enable transform performance monitoring|Enable performance monitoring for the transforms in this pipeline|boolean
+|Transform performance measurement interval (ms)|The interval (milliseconds) to monitor the performance for the transforms in this pipeline|integer
+|Maximum number of snapshots in memory|the number of performance monitoring snapshots to keep in memory for the transforms in this pipeline|integer
