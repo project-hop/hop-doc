@@ -66,7 +66,7 @@ image::hop-gui/pipeline/transforms.png[Hop - transforms, 75% , align="left"]
 |Show the fields exiting this transform|Shows metadata, like the field name and type for fields coming out of the transform.
 |Distribute rows|In case of more than one hop the data is distributed between the next transforms.
 |Copy rows|In case of more than one hop the daya is copied to the next transforms.
-|Specify transform partitioning|
+|Specify transform partitioning|Specify how rows of data need to be grouped into partitions allowing parallel execution where similar rows need to end up on the same transform copy
 |Edit transform description|Add a description to the transform.
 |Transform error handling|Set the error handling for the transform, not available for all transforms.
 |Delete this transform|Delete selected transform from the canvas.
