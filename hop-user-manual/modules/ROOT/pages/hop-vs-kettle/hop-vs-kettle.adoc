@@ -3,6 +3,8 @@
 
 = Hop vs Kettle - A Quick Comparison
 
+== Concepts
+
 [width=90%", cols="6,2,2", options="header"]
 |===
 |Terminology|Kettle|Hop
@@ -18,6 +20,8 @@
 |Script for configuration|-|Hop Config
 |===
 
+== Configuration
+
 [width="90%", cols="2,3,3", options="header"]
 |===
 |Configuration|Kettle|Hop
@@ -30,25 +34,28 @@
 |Environment/Project configurations|${KETTLE_HOME}/.kettle/environment/metastore|${HOP_CONFIG_FOLDER}/hop-config.json or ./config/hop-config.json
 |===
 
+== Engines
+
+[width="90%", cols="70%,15%,15%", options="header"]
+|===
+|Engine|Kettle|Hop
+|Unit Testing|Plugin|Yes
+|Apache Spark Support|No (PDI EE only)|Yes (Beam)
+|Apache Flink Support|No|Yes (Beam)
+|Google Cloud DataFlow Support|No|Yes (Beam)
+|===
+
+== Features
 
 [width="90%", cols="70%,15%,15%", options="header"]
 |===
 |Feature|Kettle|Hop
-|Unit Testing|Plugin|Yes
-|Apache Spark Support|No (PDI EE only)|Yes(Beam)
-|Apache Flink Support|No|Yes(Beam)
-|Google Cloud DataFlow Support|No|Yes(Beam)
 |Projects and Lifecycle Configuration |No|Yes
 |Search Information in projects and configurations|No|Yes
 |Configuration management through UI and command line|No|Yes
 |Standardized shared metadata|No|Yes
 |Pluggable runtime engines|No|Yes
 |Advanced GUI features: memory, native zooom, ...|No|Yes
-|===
-
-[width="90%", cols="70%,15%,15%", options="header"]
-|===
-|Feature|Kettle|Hop
 |Metadata Injection|Yes|In Progress
 |Mapping (sub-transformation/pipeline|Yes|In Progress
 |Web Interface|WebSpoon|HopWeb (in progress)
