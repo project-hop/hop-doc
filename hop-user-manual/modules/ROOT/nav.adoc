@@ -121,8 +121,6 @@
 *** xref:plugins/transforms/pgbulkloader.adoc[PostgreSQL Bulk Loader]
 *** xref:plugins/transforms/processfiles.adoc[Process files]
 *** xref:plugins/transforms/rest.adoc[REST Client]
-*** xref:plugins/transforms/rssinput.adoc[RSS Input]
-*** xref:plugins/transforms/rssoutput.adoc[RSS output]
 *** xref:plugins/transforms/propertyinput.adoc[Read data (key, value) from properties files.]
 *** xref:plugins/transforms/regexeval.adoc[Regex Evaluation]
 *** xref:plugins/transforms/replacestring.adoc[Replace in String]
