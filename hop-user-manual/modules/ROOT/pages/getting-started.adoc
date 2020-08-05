@@ -282,7 +282,7 @@ With these three hop types and the actions at your disposal, you're ready to cre
 
 As with designing workflows, the steps to run a workflow are very similar to running a pipeline.
 
-Click the 'run' button image::getting-started/icons/run.svg[Run, 25px, align="bottom"] in your workflow toolbar
+Click the 'run' button image:getting-started/icons/run.svg[Run, 25px, align="bottom"] in your workflow toolbar
 
 In the workflow run dialog, hit the 'New' button in the upper right corner to create a new 'Workflow run configuration'.
 

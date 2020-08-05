@@ -4,9 +4,8 @@
 
 The table below lists the main shortcuts in Hop. Using them will save you a lot of time while working with Hop.
 
-****
-If you are a Mac user, please be aware that the Mac keys must be used. Most of the times you can replace ctrl with cmd.
-****
+NOTE: If you are a Mac user, please be aware that the Mac keys must be used. Most of the times you can replace ctrl with cmd.
+
 == General Shortcuts
 
 [width="85%", cols="25%, 75%", options="header"]
