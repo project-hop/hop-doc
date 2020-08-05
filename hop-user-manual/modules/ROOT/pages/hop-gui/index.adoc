@@ -18,7 +18,7 @@ Pipelines are a main concept in Hop. A pipeline are more granular items of work.
 
 Workflows perform a variety of actions between a starting point and one or more endpoints. Following sections describe the basic concepts of Workflows.
 
-==== Create Workflows
+==== http://www.project-hop.org/manual/latest/hop-gui/workflows/create-workflow.html[Create Workflows]
 ==== Run and debug Workflows
 ==== https://www.project-hop.org/manual/latest/hop-gui/run-configurations/workflow/workflow-run-configurations.html[Workflow Run Configuration]
 == Logging & Monitoring
