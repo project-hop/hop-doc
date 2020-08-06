@@ -8,7 +8,7 @@ Work items are the building blocks for the start of your Hop journey. Different 
 
 == Pipelines
 
-Pipelines are a main concept in Hop. A pipeline are more granular items of work. The actual work is done in a Pipeline. Following sections describe the basic concepts of Pipelines.
+Pipelines are a main concept in Hop. A pipeline is a more granular item of work. The actual work is done in a Pipeline. Following sections describe the basic concepts of Pipelines.
 
 ==== https://www.project-hop.org/manual/latest/hop-gui/pipelines/create-pipeline.html[Create pipeline]
 ==== Run, preview and debug pipelines
@@ -36,3 +36,7 @@ Hop can be connected to your Git Repository, this section will explain more into
 == Metastore Browser
 
 The metastore browser contains all objects in one location. This section handles the metastore browser and the editors of the metastore elements.
+
+== https://www.project-hop.org/manual/latest/hop-gui/shortcuts.html[Hop Shortcuts]
+
+Hop contains a lot of keyboard shortcuts to provide an alternative way to do something that you’d typically do with a mouse. The section below contains a list of shortcuts and their actions.
