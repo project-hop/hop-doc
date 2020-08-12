@@ -98,7 +98,7 @@ Following properties can be configured:
 * Parameters
 * Settings
 
-image::hop-gui/workflow/workflow-pipeline.png[Workflow properties, 75% , align="left"]
+image::hop-gui/workflow/workflow-properties.png[Workflow properties, 75% , align="left"]
 
 The Workflow tab allows you to specify general properties about the workflow including:
 
