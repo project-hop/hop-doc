@@ -56,8 +56,8 @@
 |Standardized shared metadata|No|Yes
 |Pluggable runtime engines|No|Yes
 |Advanced GUI features: memory, native zooom, ...|No|Yes
-|Metadata Injection|Yes|In Progress
-|Mapping (sub-transformation/pipeline|Yes|In Progress
+|Metadata Injection|Yes|Yes (most transforms)
+|Mapping (sub-transformation/pipeline|Yes|Yes(simplified)
 |Web Interface|WebSpoon|HopWeb (in progress)
 |APL 2.0 license compliance|LGPL doubts regarding pentaho-metastore library|Yes
 |Pluggable metadata objects|No|Yes
