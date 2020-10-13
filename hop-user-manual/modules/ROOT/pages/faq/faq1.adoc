@@ -1,4 +1,0 @@
-[[DummyFaq]]
-= What is HOP?
-
-Hop stands for Hop Orchestration platform, it aims to be a central space to manage metadata to run data pipelines on multiple platforms
