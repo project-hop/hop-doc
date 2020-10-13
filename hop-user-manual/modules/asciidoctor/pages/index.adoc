@@ -292,7 +292,6 @@ include::{sourcepath}/plugins/actions/zipfile.adoc[leveloffset=+2]
 include::{sourcepath}/samples/samples.adoc[leveloffset=+0]
 include::{sourcepath}/samples/dummy-sample.adoc[leveloffset=+1]
 include::{sourcepath}/faq/faq.adoc[leveloffset=+0]
-include::{sourcepath}/faq/faq1.adoc[leveloffset=+1]
 include::{sourcepath}/image-testpage.adoc[leveloffset=+0]
 //::=END AUTO GENERATED LINKS
 
