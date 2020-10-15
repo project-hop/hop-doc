@@ -33,7 +33,7 @@ image::concepts/pipeline.png[Pipeline]
 
 == Environment
 
-The link:hop-gui/environments/environments.adoc#HopEnvironments[Hop Environment] allows data developers to manage development, acceptance and production environments with their configurations and variables.
+The link:hop-gui/environments/environments.adoc[Hop Environment] allows data developers to manage development, acceptance and production environments with their configurations and variables.
 Each environment will remember your opened files, their zoom level and other UI settings.
 
 image::concepts/environments.png[Environment Examples]

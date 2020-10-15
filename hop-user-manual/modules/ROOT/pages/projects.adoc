@@ -37,7 +37,7 @@ The way this works is that a developer works on a new feature for the project in
 - When changes are applied to a project in development it's possible to automatically run this revision of the project and see if all is well.  This is called Continuous Integration
 
 Because files in the project need to be moved from one environment to another it's really a bad idea to hard-code any references to host names, folders and so on.  We want to define these with
-<<hop-gui/variables/variables.adoc#Variables,Variables>>. However, that means that in order to reference a test-server in a "testing" environment or a production-server in a "production" environment you need to be able to set these variables when you're executing a pipeline or workflow. Because of this a Project Lifecycle Environment contains the following items:
+link:hop-gui/variables/variables.adoc[Variables]. However, that means that in order to reference a test-server in a "testing" environment or a production-server in a "production" environment you need to be able to set these variables when you're executing a pipeline or workflow. Because of this a Project Lifecycle Environment contains the following items:
 
 - A reference to a Project (the name)
 - The filename for a project configuration containing the values for the environment specific settings. (TBD: environment.json)
