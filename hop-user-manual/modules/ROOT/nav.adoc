@@ -27,6 +27,7 @@
 * xref:plugins/plugins.adoc[Plugins]
 //::=START AUTO GENERATED LINKS
 ** xref:plugins/transforms.adoc[Transform Plugins]
+*** xref:plugins/transforms/metainject.adoc[Abort]
 *** xref:plugins/transforms/abort.adoc[Abort]
 *** xref:plugins/transforms/constant.adoc[Add Constants]
 *** xref:plugins/transforms/addsequence.adoc[Add Sequence]
@@ -141,6 +142,7 @@
 *** xref:plugins/transforms/fieldsplitter.adoc[Split Fields]
 *** xref:plugins/transforms/splitfieldtorows.adoc[Split fields]
 *** xref:plugins/transforms/streamlookup.adoc[Stream Lookup]
+*** xref:plugins/transforms/streamschemamerge.adoc[Stream Schema Merge]
 *** xref:plugins/transforms/stringoperations.adoc[String operations]
 *** xref:plugins/transforms/stringcut.adoc[Strings cut]
 *** xref:plugins/transforms/switchcase.adoc[Switch / Case]
