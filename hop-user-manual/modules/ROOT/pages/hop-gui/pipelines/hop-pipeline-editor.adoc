@@ -1,6 +1,8 @@
 [[HopPipelineEditor]]
 :imagesdir: ../assets/images
 
+= Toolbar
+
 Let's walk through the top toolbar:
 
 image::getting-started/getting-started-pipeline-toolbar.png[Hop - Pipeline Toolbar, align="left"]

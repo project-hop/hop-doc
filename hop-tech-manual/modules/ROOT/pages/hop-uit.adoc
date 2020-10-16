@@ -1,5 +1,5 @@
 [[hop-uit]]
-== Hop Ultimate Import Tool
+= Hop Ultimate Import Tool
 
 The Hop Ultimate Import Tool converts Pentaho Data Integration (PDI) files to the equivalent Hop files. A conversion is required because various tags of the XML based file format have changed. In some cases also content in the XML file has changed. One additional important difference is that Hop aims to be completely metadata driven and has removed database connection information from the XML file into to separate database metadata files. Hop provides a new and enhanced way to work with different environments and allows the user to quickly switch between those environments using different definitions of variables, connections and more.
 
