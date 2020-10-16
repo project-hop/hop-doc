@@ -43,6 +43,7 @@ The Hop Gui is your local development environment to build, run, preview and deb
 
 Check out this short video to learn how to download, unzip and start the Hop Gui (on Windows).
 
+<!-- [html-validate-disable-next deprecated] -->
 video::RMIOTmZK-YE[youtube, width=75%, height=400px]
 
 === Start the Hop GUI
