@@ -52,10 +52,10 @@ cd ../../../../..
 #generate asciidoc index based on antora naviagtion file
 
 #remove current list
-< ./hop-user-manual/modules/asciidoctor/pages/index.adoc sed '/::=START/,/::=END/{/::=START/!{/::=END/!d}}' > ./hop-user-manual/modules/asciidoctor/pages/index_temp.adoc
+< ./hop-user-manual/modules/.asciidoctor/pages/index.adoc sed '/::=START/,/::=END/{/::=START/!{/::=END/!d}}' > ./hop-user-manual/modules/.asciidoctor/pages/index_temp.adoc
 
 #replace nav with empty
-cp ./hop-user-manual/modules/asciidoctor/pages/index_temp.adoc ./hop-user-manual/modules/asciidoctor/pages/index.adoc
+cp ./hop-user-manual/modules/.asciidoctor/pages/index_temp.adoc ./hop-user-manual/modules/.asciidoctor/pages/index.adoc
 
 #reverse file order
 tac ./hop-user-manual/modules/ROOT/nav.adoc > /tmp/nav_reversed.adoc
@@ -79,8 +79,8 @@ while read p; do
 		# fi
 	
 	echo "File Path: $NEW_LINE"
-	awk "/::=START/ { print; print \"$(echo "$NEW_LINE")\"; next }1" ./hop-user-manual/modules/asciidoctor/pages/index.adoc > ./hop-user-manual/modules/asciidoctor/pages/index_temp.adoc
-	cp ./hop-user-manual/modules/asciidoctor/pages/index_temp.adoc ./hop-user-manual/modules/asciidoctor/pages/index.adoc
+	awk "/::=START/ { print; print \"$(echo "$NEW_LINE")\"; next }1" ./hop-user-manual/modules/.asciidoctor/pages/index.adoc > ./hop-user-manual/modules/.asciidoctor/pages/index_temp.adoc
+	cp ./hop-user-manual/modules/.asciidoctor/pages/index_temp.adoc ./hop-user-manual/modules/.asciidoctor/pages/index.adoc
 	
 	fi
 
@@ -89,6 +89,6 @@ done < /tmp/nav_reversed.adoc
 
 #cleanup
 rm /tmp/nav_reversed.adoc
-rm ./hop-user-manual/modules/asciidoctor/pages/index_temp.adoc
+rm ./hop-user-manual/modules/.asciidoctor/pages/index_temp.adoc
 
 
