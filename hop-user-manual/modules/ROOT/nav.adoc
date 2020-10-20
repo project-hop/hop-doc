@@ -27,7 +27,6 @@
 * xref:plugins/plugins.adoc[Plugins]
 //::=START AUTO GENERATED LINKS
 ** xref:plugins/transforms.adoc[Transform Plugins]
-*** xref:plugins/transforms/metainject.adoc[Abort]
 *** xref:plugins/transforms/abort.adoc[Abort]
 *** xref:plugins/transforms/constant.adoc[Add Constants]
 *** xref:plugins/transforms/addsequence.adoc[Add Sequence]
@@ -116,6 +115,7 @@
 *** xref:plugins/transforms/memgroupby.adoc[Memory Group By]
 *** xref:plugins/transforms/mergejoin.adoc[Merge Join]
 *** xref:plugins/transforms/mergerows.adoc[Merge rows (diff)]
+*** xref:plugins/transforms/metainject.adoc[Metadata Injection]
 *** xref:plugins/transforms/excelinput.adoc[Microsoft Excel input]
 *** xref:plugins/transforms/exceloutput.adoc[Microsoft Excel output]
 *** xref:plugins/transforms/multimerge.adoc[Multiway Merge Join]
